@@ -446,7 +446,6 @@ end # class LdmMdParser
 
 if __FILE__ == $0
 	SD = File.dirname(__FILE__)
-	require 'rubygems'
 	require 'log4r'
 	require 'ostruct'
 	require 'MiqDisk'

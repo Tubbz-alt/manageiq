@@ -1,6 +1,5 @@
 # encoding: US-ASCII
 
-require 'rubygems'
 require 'platform'
 require 'runcmd'
 require 'miq-wmi'

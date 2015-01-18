@@ -1,5 +1,4 @@
 begin
-	require 'rubygems'
 	require 'log4r'
 	require 'ostruct'
 	require 'MiqDisk'

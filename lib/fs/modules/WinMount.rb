@@ -1,4 +1,3 @@
-require 'rubygems'
 require 'platform'
 require 'MiqFS'
 require 'boot_info_win'

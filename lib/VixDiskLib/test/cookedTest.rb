@@ -1,6 +1,5 @@
 require "VixDiskLib"
 require 'enumerator'
-require 'rubygems'
 require 'log4r'
 
 #

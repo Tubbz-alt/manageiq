@@ -1,4 +1,3 @@
-require 'rubygems'
 require 'trollop'
 
 module Build

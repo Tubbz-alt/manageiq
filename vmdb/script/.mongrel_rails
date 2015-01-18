@@ -6,7 +6,6 @@
 # this file is here to facilitate running it.
 #
 
-require 'rubygems'
 
 version = ">= 0"
 

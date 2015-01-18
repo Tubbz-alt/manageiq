@@ -1,4 +1,3 @@
-require 'rubygems'
 require 'openssl' # Required for 'Digest' in camcorder (< Ruby 2.1)?
 require 'camcorder'
 require 'log4r'

@@ -39,7 +39,6 @@
 # Copyright (c) 2005-2006 Daniel J. Berger.
 # Licensed under the same terms as Ruby itself.
 #
-require 'rubygems'
 require 'facade'
 require 'fileutils'
 

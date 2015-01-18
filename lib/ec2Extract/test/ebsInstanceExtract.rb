@@ -1,4 +1,3 @@
-require 'rubygems'
 require 'aws-sdk'
 require 'log4r'
 require 'MiqVm'

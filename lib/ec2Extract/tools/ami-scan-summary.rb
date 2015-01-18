@@ -1,5 +1,4 @@
 
-require 'rubygems'
 require 'log4r'
 require "#{File.dirname(__FILE__)}/../S3FS"
 require_relative '../credentials'

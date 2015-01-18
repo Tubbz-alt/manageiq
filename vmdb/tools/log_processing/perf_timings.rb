@@ -8,7 +8,6 @@ $outdir.chomp!("/")
 $outdir.chomp!("\\")
 $outdir = File.expand_path($outdir)
 
-require 'rubygems'
 require 'fastercsv'
 
 $:.push(File.expand_path("#{File.dirname(__FILE__)}/../../../lib/util/")) unless ENV["RAILS_ENV"]

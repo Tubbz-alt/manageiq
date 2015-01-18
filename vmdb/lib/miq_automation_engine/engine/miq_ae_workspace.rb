@@ -192,7 +192,6 @@ module MiqAeEngine
     end
 
     def to_dot(path=nil)
-      require "rubygems"
       require "graphviz"
 
       objs = path.nil? ? roots : get_obj_from_path(path)

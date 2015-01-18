@@ -1,4 +1,3 @@
-require 'rubygems'
 require 'log4r'
 require '../VMwareWebService/MiqVim'
 require '../VMwareWebService/MiqVimBroker'

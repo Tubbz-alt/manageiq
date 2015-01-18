@@ -1,4 +1,3 @@
-require 'rubygems'
 require 'aws-sdk'
 require_relative '../credentials'
 

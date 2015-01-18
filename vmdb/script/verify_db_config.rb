@@ -3,7 +3,6 @@ SCRIPT  = File.join(File.dirname(__FILE__), "run_rake.rb")
 RUNNER  = "#{File.join(rails_root, "bin/rails")} runner"
 DB_FILE = File.join(rails_root, "data/db_settings")
 
-require 'rubygems'
 require 'bundler/setup'
 
 $:.unshift(File.dirname(__FILE__))

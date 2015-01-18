@@ -7,7 +7,6 @@ require 'uri'
 require_relative '../miq-exception'
 require_relative '../miq-uuid'
 
-require 'rubygems'
 
 class MiqGenericMountSession
   #require 'miq_ftp_session'

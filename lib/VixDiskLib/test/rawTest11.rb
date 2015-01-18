@@ -1,4 +1,3 @@
-require 'rubygems'
 require "VixDiskLib_raw"
 require 'log4r'
 

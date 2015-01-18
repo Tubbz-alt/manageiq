@@ -1,5 +1,4 @@
 #!/usr/bin/env ruby
-require 'rubygems'
 require 'rufus-scheduler'
 require 'pathname'
 

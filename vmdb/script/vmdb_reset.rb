@@ -1,5 +1,4 @@
 # WARNING: DO NOT RUN THIS SCRIPT - EVER!!!
-require 'rubygems'
 require 'platform'
 require 'fileutils'
 

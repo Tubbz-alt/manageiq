@@ -1,6 +1,5 @@
 #!/usr/bin/env ruby
 
-require 'rubygems'
 require 'log4r'
 require_relative '../credentials'
 require_relative '../Ec2ExtractQueue'

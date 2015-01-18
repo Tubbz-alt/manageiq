@@ -1,4 +1,3 @@
-require 'rubygems'
 #gem 'Platform'
 require 'platform'
 require 'miq-system'

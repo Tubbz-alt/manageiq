@@ -67,7 +67,6 @@ module Log4r
 end # module Log4r
 
 if __FILE__ == $0
-	require 'rubygems'
 	require "log4r"
 	require 'aws-sdk'
 	require_relative 'tools/ExtractUserData'

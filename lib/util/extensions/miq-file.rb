@@ -1,4 +1,3 @@
-require 'rubygems'
 require 'platform'
 require "Win32API" if Platform::OS == :win32
 require 'MiqLargeFile'

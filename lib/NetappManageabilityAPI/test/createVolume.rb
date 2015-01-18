@@ -1,4 +1,3 @@
-require 'rubygems'
 require 'log4r'
 require "NmaClient"
 require "../util/MiqDumpObj"

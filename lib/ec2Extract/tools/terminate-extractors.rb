@@ -1,6 +1,5 @@
 #!/usr/bin/env ruby
 
-require 'rubygems'
 require 'aws-sdk'
 require "../credentials"
 cmdName = File.basename($0)

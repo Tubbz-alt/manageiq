@@ -30,7 +30,6 @@ end # class MiqVm
 
 if __FILE__ == $0
     
-    require 'rubygems'
     require 'log4r'
     
     class ConsoleFormatter < Log4r::Formatter

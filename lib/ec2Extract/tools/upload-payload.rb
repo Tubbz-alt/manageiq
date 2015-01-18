@@ -1,5 +1,4 @@
 
-require 'rubygems'
 require 'optparse'
 require 'aws-sdk'
 require_relative "../credentials"

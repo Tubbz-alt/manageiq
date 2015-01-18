@@ -1,4 +1,3 @@
-require 'rubygems'
 require 'log4r'
 require 'log4r/configurator'
 

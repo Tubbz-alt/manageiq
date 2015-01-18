@@ -1,5 +1,4 @@
 require 'ostruct'
-require 'rubygems'
 require 'VmBlackBox'
 require 'VmwareOps'
 require 'miqping'

@@ -252,7 +252,6 @@ module MiqLinux
 end # module MiqLinux
 
 if __FILE__ == $0
-	require 'rubygems'
 	require 'log4r'
 	require 'MiqVm'
 	

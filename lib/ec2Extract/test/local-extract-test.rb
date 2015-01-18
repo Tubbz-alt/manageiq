@@ -1,4 +1,3 @@
-require 'rubygems'
 require 'net/ssh'
 require 'net/sftp'
 require 'log4r'

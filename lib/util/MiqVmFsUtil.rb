@@ -60,7 +60,6 @@ class MiqVmFsUtil
 end # class MiqVmFsUtil
 
 if __FILE__ == $0
-    require 'rubygems'
     require 'log4r'
     require 'boot_info_win'
     require 'MiqVm'

@@ -1,4 +1,3 @@
-require 'rubygems'
 require 'win32/process'
 require 'binary_struct'
 

@@ -2,7 +2,6 @@ require 'MiqDisk'
 require 'MiqFS'
 require 'VixDiskLib'
 require 'ostruct'
-require 'rubygems'
 require 'log4r'
 
 #

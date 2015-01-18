@@ -139,7 +139,6 @@ end
 
 begin
   require 'date'
-  require 'rubygems'
   $:.unshift("#{Gem.loaded_specs['activesupport'].full_gem_path}/lib")
   require 'active_support/all'
   require 'socket'

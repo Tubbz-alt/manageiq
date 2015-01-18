@@ -1,6 +1,5 @@
 #!/usr/bin/env ruby
 
-require 'rubygems'
 require 'aws-sdk'
 require_relative '../credentials'
 

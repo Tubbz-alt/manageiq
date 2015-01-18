@@ -1,6 +1,5 @@
 require 'optparse'
 require 'ostruct'
-require 'rubygems'
 require 'platform'
 
 if $log.nil?

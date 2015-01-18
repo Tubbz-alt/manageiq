@@ -1,6 +1,5 @@
 
 require 'MIQExtract'
-require 'rubygems'
 require 'log4r'
 require 'MiqVm'
     

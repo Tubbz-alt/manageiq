@@ -1,4 +1,3 @@
-require 'rubygems'
 require 'platform'
 
 if Platform::IMPL == :linux

@@ -1,4 +1,3 @@
-require 'rubygems'
 require 'wbem'
 require 'cgi'
 require 'socket'

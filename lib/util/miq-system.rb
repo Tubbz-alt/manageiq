@@ -1,4 +1,3 @@
-require 'rubygems'
 require 'extensions/miq-blank'
 require 'platform'
 require 'runcmd'

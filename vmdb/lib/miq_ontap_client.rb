@@ -1,4 +1,3 @@
-require 'rubygems'
 require 'wbem'
 require 'NetappManageabilityAPI/NmaClient'
 require 'miq_storage_defs'

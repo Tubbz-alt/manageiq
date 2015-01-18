@@ -54,7 +54,6 @@ Bundler.setup
 require 'fileutils'
 require 'highline/import'
 require 'highline/system_extensions'
-require 'rubygems'
 require 'timeout'
 require 'bcrypt'
 require 'linux_admin'

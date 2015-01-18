@@ -33,7 +33,6 @@ class MiqVimBroker
         
     def initialize(mode=:client, port=9001)
         if mode == :client
-			require 'rubygems'
 			require 'httpclient'	# needed for exception classes
 			require 'MiqVimDump'
 			require 'MiqVimVdlMod'
