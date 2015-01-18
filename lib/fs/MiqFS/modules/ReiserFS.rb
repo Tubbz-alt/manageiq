@@ -1,5 +1,4 @@
 # Ext3 stuff.
-$:.push("#{File.dirname(File.expand_path(__FILE__))}/../../ReiserFS")
 require 'ReiserFSSuperblock'
 require 'ReiserFSDirectory'
 require 'ReiserFSDirectoryEntry'

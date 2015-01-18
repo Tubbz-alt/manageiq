@@ -1,4 +1,3 @@
-$:.push("#{File.dirname(__FILE__)}/..")
 require 'miq-hash_struct'
 require 'open3'
 

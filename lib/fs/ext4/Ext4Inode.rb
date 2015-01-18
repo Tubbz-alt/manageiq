@@ -3,7 +3,6 @@ require 'Ext4Extent'
 require 'Ext4ExtentHeader'
 require 'Ext4ExtentIndex'
 
-$:.push("#{File.dirname(__FILE__)}/../../util")
 require 'binary_struct'
 require 'MiqMemory'
 

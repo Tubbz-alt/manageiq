@@ -1,8 +1,6 @@
 require 'rufus/lru'
 
 # Fat32 stuff.
-$:.push("#{File.dirname(__FILE__)}/../../fat32")
-$:.push("#{File.dirname(__FILE__)}/../fs/fat32") #This path is necessary when testing.
 require 'Fat32BootSect'
 require 'Fat32Directory'
 require 'Fat32DirectoryEntry'

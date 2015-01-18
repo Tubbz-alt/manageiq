@@ -1,5 +1,3 @@
-$:.push(File.dirname(__FILE__))
-
 class  MiqVimCustomizationSpecManager
 	
 	attr_reader	:invObj

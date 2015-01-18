@@ -1,6 +1,3 @@
-$:.push("#{File.dirname(__FILE__)}/../../../util/")
-$:.push("#{File.dirname(__FILE__)}/../../../util/xml/")
-
 #require 'fleece_hives'
 require 'miq-xml'
 require 'miq-logger'

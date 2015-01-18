@@ -3,10 +3,6 @@ require 'ostruct'
 require 'rubygems'
 require 'platform'
 
-$:.push("#{File.dirname(__FILE__)}/implementations")
-$:.push("#{File.dirname(__FILE__)}/../util")
-$:.push("#{File.dirname(__FILE__)}/../util/diag")
-
 if $log.nil?
   require 'log4r'
   $log = Log4r::Logger['toplog']

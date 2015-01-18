@@ -13,7 +13,6 @@ end
 
 require_relative '../../bundler_setup'
 
-$:.push("#{File.dirname(__FILE__)}/..")
 require 'MiqVimBroker'
 
 require 'benchmark'

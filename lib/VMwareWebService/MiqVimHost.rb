@@ -3,10 +3,6 @@ require 'sync'
 require 'enumerator'
 require "ostruct"
 
-$:.push(File.dirname(__FILE__))
-$:.push("#{File.dirname(__FILE__)}/../util")
-$:.push("#{File.dirname(__FILE__)}/../util/extensions")
-
 require 'miq-hash'
 require 'miq-exception'
 require 'MiqHostDatastoreSystem'

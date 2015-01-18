@@ -1,6 +1,4 @@
 
-$:.push("#{File.dirname(__FILE__)}/../../MiqVm")
-
 require 'rubygems'
 require 'ostruct'
 require 'log4r'

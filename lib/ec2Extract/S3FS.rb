@@ -1,5 +1,3 @@
-$:.push("#{File.dirname(__FILE__)}/../fs/MiqFS")
-
 require 'rubygems'
 require 'aws-sdk'
 require 'MiqFS'

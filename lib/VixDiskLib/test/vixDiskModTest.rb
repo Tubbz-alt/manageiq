@@ -1,7 +1,3 @@
-$:.push("#{File.dirname(__FILE__)}/../../disk")
-$:.push("#{File.dirname(__FILE__)}/../../fs/MiqFS")
-$:.push("#{File.dirname(__FILE__)}/..")
-
 require 'MiqDisk'
 require 'MiqFS'
 require 'VixDiskLib'

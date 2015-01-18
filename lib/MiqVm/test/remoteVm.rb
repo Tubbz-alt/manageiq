@@ -1,8 +1,4 @@
 
-$:.push("#{File.dirname(__FILE__)}/..")
-$:.push("#{File.dirname(__FILE__)}/../..")
-$:.push("#{File.dirname(__FILE__)}/../../VmwareWebService")
-
 require 'bundler_setup'
 require 'ostruct'
 require 'log4r'

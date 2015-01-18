@@ -1,7 +1,3 @@
-$:.push(File.dirname(__FILE__))
-$:.push("#{File.dirname(__FILE__)}/../fs/MiqFS")
-$:.push("#{File.dirname(__FILE__)}/../fs/MiqFS/modules")
-
 require 'ostruct'
 require 'MiqVm'
 require 'MiqFS'

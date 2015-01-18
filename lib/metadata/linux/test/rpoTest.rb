@@ -1,4 +1,3 @@
-$:.push("#{File.dirname(__FILE__)}/../../../db/MiqBdb")
 require 'MiqBdb'
 
 db = MiqBerkeleyDB::MiqBdb.new("Name")

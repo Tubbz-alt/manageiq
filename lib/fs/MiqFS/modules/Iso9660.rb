@@ -1,7 +1,6 @@
 require 'rufus/lru'
 
 # Iso9660 stuff.
-$:.push("#{File.dirname(__FILE__)}/../../iso9660")
 require 'Iso9660BootSector'
 require 'Iso9660DirectoryEntry'
 require 'Iso9660Directory'

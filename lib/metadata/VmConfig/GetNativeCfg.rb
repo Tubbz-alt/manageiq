@@ -1,6 +1,3 @@
-$:.push(File.dirname(__FILE__))
-$:.push("#{File.dirname(__FILE__)}/../../util")
-
 require 'miq-xml'
 require 'runcmd'
 require 'VmConfig'

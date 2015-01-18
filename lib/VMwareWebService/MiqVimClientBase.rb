@@ -1,6 +1,4 @@
 
-$:.push(File.dirname(__FILE__))
-
 require 'sync'
 require 'VimService'
 

@@ -7,7 +7,6 @@ require 'uri'
 require_relative '../miq-exception'
 require_relative '../miq-uuid'
 
-$:.push(File.expand_path(File.join(File.dirname(__FILE__) ) ) )
 require 'rubygems'
 
 class MiqGenericMountSession

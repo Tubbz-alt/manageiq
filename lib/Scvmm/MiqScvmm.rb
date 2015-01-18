@@ -1,6 +1,3 @@
-$:.push("#{File.dirname(__FILE__)}")
-$:.push("#{File.dirname(__FILE__)}/../util")
-$:.push("#{File.dirname(__FILE__)}/../util/win32")
 require 'miq-xml'
 require 'miq-powershell'
 require 'miq-powershell-daemon'

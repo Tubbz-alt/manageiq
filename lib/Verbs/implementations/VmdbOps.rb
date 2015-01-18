@@ -1,6 +1,3 @@
-$:.push("#{File.dirname(__FILE__)}/../../blackbox")
-$:.push("#{File.dirname(__FILE__)}/../../util/diag")
-
 require 'ostruct'
 require 'rubygems'
 require 'VmBlackBox'
@@ -14,7 +11,6 @@ rescue NameError
   # Load it directly, since we are not in a Rails env
   require 'action_web_service'
 
-  $:.push(File.expand_path(File.join(File.dirname(__FILE__), %w{.. .. .. vmdb app apis})))
   require 'evm_webservices_client'
   require 'miqservices_client'
   require 'miqservices_api'

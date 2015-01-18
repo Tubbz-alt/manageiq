@@ -1,8 +1,3 @@
-$:.push("#{File.dirname(__FILE__)}/../../metadata/VmConfig")
-$:.push("#{File.dirname(__FILE__)}/../../metadata/util/win32")
-$:.push("#{File.dirname(__FILE__)}/../../util")
-$:.push("#{File.dirname(__FILE__)}")
-
 require 'ostruct'
 require 'miq-xml'
 require 'win32/registry'

@@ -1,12 +1,9 @@
 require 'ostruct'
 
-$:.push("#{File.dirname(__FILE__)}/../..")
 require 'VmsFromYaml'
 
-$:.push("#{File.dirname(__FILE__)}/../../../disk")
 require 'MiqDisk'
 
-$:.push("#{File.dirname(__FILE__)}/../../../fs/MiqFS")
 require 'MiqFS'
 
 class Ext3TestFile < Test::Unit::TestCase

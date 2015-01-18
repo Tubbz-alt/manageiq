@@ -1,5 +1,3 @@
-$:.push("#{File.dirname(__FILE__)}/../../../util")
-
 require 'miq-xml'
 require 'digest/md5'
 require 'remote-registry'

@@ -1,7 +1,4 @@
 
-$:.push("#{File.dirname(__FILE__)}/..")
-$:.push("#{File.dirname(__FILE__)}/../../MiqFS")
-
 require 'ostruct'
 require 'find'
 require 'fileutils'

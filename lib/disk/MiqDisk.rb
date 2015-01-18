@@ -1,6 +1,3 @@
-$:.push("#{File.dirname(__FILE__)}/modules")
-$:.push("#{File.dirname(__FILE__)}/../util")
-
 require 'binary_struct'
 require 'DiskProbe'
 

@@ -1,7 +1,3 @@
-$:.push("#{File.dirname(__FILE__)}")
-$:.push("#{File.dirname(__FILE__)}/../../../util/")
-$:.push("#{File.dirname(__FILE__)}/../../../util/xml/")
-
 require 'xml_utils'
 require 'miq-xml'
 require 'miq-logger'

@@ -1,7 +1,5 @@
 require "spec_helper"
 
-$:.push(File.expand_path(File.join(File.dirname(__FILE__), %w{.. .. .. openstack})))
-$:.push(File.expand_path(File.join(File.dirname(__FILE__), %w{.. .. .. openstack amqp})))
 require 'openstack_rabbit_event_monitor'
 
 describe OpenstackRabbitEventMonitor do

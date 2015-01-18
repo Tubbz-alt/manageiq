@@ -1,6 +1,5 @@
 # Only run if we are calling this script directly
 begin
-  $:.push("#{File.dirname(__FILE__)}/../..")
   require 'miq-xml'
   
   diff_dir = "d:/temp/xml"

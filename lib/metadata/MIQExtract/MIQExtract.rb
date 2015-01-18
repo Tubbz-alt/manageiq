@@ -1,15 +1,5 @@
 #$:.push("#{File.dirname(__FILE__)}/../VMMount")
 #$:.push("#{File.dirname(__FILE__)}/../VmConfig")
-$:.push("#{File.dirname(__FILE__)}/../../MiqVm")
-$:.push("#{File.dirname(__FILE__)}/../../util")
-$:.push("#{File.dirname(__FILE__)}/../../util/mount")
-$:.push("#{File.dirname(__FILE__)}/../util")
-$:.push("#{File.dirname(__FILE__)}/../util/win32")
-$:.push("#{File.dirname(__FILE__)}/../linux")
-$:.push("#{File.dirname(__FILE__)}/../ScanProfile")
-$:.push("#{File.dirname(__FILE__)}/../../VMwareWebService")
-$:.push("#{File.dirname(__FILE__)}/../../RedHatEnterpriseVirtualizationManagerAPI")
-
 require 'MiqVm'
 require 'md5deep'
 require 'miq-xml'

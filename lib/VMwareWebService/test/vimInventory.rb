@@ -1,4 +1,3 @@
-$:<< ".."
 require 'MiqVimInventory'
 require 'log4r'
 

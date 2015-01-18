@@ -1,6 +1,3 @@
-$:.push("#{File.dirname(__FILE__)}/../../db/MiqSqlite")
-$:.push("#{File.dirname(__FILE__)}/../../util")
-
 require 'binary_struct'
 require 'miq-hash_struct'
 require 'MiqSqlite3'

@@ -3,8 +3,6 @@
 # TODO:
 #      Provide collection of custom log names?
 
-$:.push("#{File.dirname(__FILE__)}")
-
 # Specifically use the Platform mod used in MiqDisk.
 require 'platform'
 
@@ -21,13 +19,11 @@ require 'system_path_win'
 require 'digest/md5'
 
 # Common utilities.
-$:.push("#{File.dirname(__FILE__)}/../../../util")
 require 'binary_struct'
 require 'miq-unicode'
 require 'miq-xml'
 require 'miq-exception'
 
-$:.push("#{File.dirname(__FILE__)}/..")
 require 'event_log_filter'
 
 class Win32EventLog

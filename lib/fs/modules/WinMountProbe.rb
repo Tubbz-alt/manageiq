@@ -1,6 +1,3 @@
-$:.push("#{File.dirname(__FILE__)}/../MiqFS")
-$:.push("#{File.dirname(__FILE__)}/../../metadata/util/win32")
-
 require 'MiqFS'
 require 'system_path_win'
 

@@ -1,6 +1,3 @@
-$:.push("#{File.dirname(__FILE__)}/../../util")
-$:.push("#{File.dirname(__FILE__)}/../../db/MiqBdb")
-
 require 'miq-hash_struct'
 require 'miq-xml'
 require 'MiqRpmPackages'

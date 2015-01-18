@@ -1,5 +1,3 @@
-$:.push("#{File.dirname(__FILE__)}/../../../util")
-
 # Utilities.
 require 'binary_struct'
 

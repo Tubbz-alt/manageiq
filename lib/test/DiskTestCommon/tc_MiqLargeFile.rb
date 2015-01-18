@@ -1,5 +1,3 @@
-$:.push("#{File.dirname(__FILE__)}/../../disk/modules/")
-$:.push("#{File.dirname(__FILE__)}/../../metadata/util/")
 require 'MiqLargeFile'
 require 'md5deep'
 require 'enumerator'

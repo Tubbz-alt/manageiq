@@ -1,6 +1,3 @@
-$:.push(File.dirname(__FILE__))
-$:.push("#{File.dirname(__FILE__)}/../VixDiskLib")
-
 require 'sync'
 
 require 'MiqVimInventory'

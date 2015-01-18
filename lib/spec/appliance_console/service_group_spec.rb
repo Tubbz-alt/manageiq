@@ -1,6 +1,5 @@
 require "spec_helper"
 
-$:.push(File.expand_path(File.join(File.dirname(__FILE__), %w{.. .. lib})))
 require "appliance_console/service_group"
 require "linux_admin"
 

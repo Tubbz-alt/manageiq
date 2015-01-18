@@ -1,6 +1,3 @@
-$:.push("#{File.dirname(__FILE__)}")
-$:.push("#{File.dirname(__FILE__)}/../util")
-
 require 'sync'
 require 'miq-exception'
 require 'timeout'

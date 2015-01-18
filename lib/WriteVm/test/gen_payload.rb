@@ -1,10 +1,5 @@
 #!/usr/bin/env ruby
 
-$: << "#{File.dirname(__FILE__)}/../../fs"
-$: << "#{File.dirname(__FILE__)}/../../fs/MetakitFS"
-$: << "#{File.dirname(__FILE__)}/../../fs/MiqFS"
-$: << "#{File.dirname(__FILE__)}/../../fs/MiqFS/modules"
-
 require 'rubygems'
 require 'log4r'
 require 'optparse'

@@ -1,7 +1,3 @@
-$:.push("#{File.dirname(__FILE__)}/../fs/MiqFS")
-$:.push("#{File.dirname(__FILE__)}/../fs/VimDatastoreFS")
-$:.push("#{File.dirname(__FILE__)}/../util/")
-
 require 'sync'
 
 require 'MiqFS'

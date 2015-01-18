@@ -1,6 +1,5 @@
 require 'test/unit'
 
-$:.push("#{File.dirname(__FILE__)}/../")
 require 'LinuxUtils'
 
 class TestLinuxUtils < Test::Unit::TestCase

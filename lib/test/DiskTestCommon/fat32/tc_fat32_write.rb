@@ -1,19 +1,14 @@
 require 'test/unit'
 require 'ostruct'
 
-$:.push("#{File.dirname(__FILE__)}/../..")
 require 'VmsFromYaml'
 
-$:.push("#{File.dirname(__FILE__)}/../../../disk")
 require 'MiqDisk'
 
-$:.push("#{File.dirname(__FILE__)}/../../../fs/MiqFS")
 require 'MiqFS'
 
-$:.push("#{File.dirname(__FILE__)}/../../../fs/fat32")
 require 'Fat32BootSect'
 
-$:.push("#{File.dirname(__FILE__)}/..")
 require 'FSTestUtil'
 
 class Fat32TestWrite < Test::Unit::TestCase

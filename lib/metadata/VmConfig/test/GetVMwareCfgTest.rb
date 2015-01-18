@@ -1,7 +1,4 @@
 # Only run if we are calling this script directly
-$:.push("#{File.dirname(__FILE__)}/../../../util")
-$:.push("#{File.dirname(__FILE__)}/..")
-$:.push("#{File.dirname(__FILE__)}/../../MiqExtract")
 require 'miq-logger'
 require 'VmConfig'
 require 'MiqExtract'

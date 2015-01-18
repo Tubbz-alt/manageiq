@@ -1,8 +1,3 @@
-$: << "#{File.dirname(__FILE__)}/.."
-$: << "#{File.dirname(__FILE__)}/../.."
-$: << "#{File.dirname(__FILE__)}/../../MiqFS"
-$: << "#{File.dirname(__FILE__)}/../../MiqFS/modules"
-
 require 'rubygems'
 require 'log4r'
 require 'MiqFsUtil'

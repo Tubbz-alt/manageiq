@@ -1,6 +1,5 @@
 require 'Iso9660Util'
 
-$:.push("#{File.dirname(__FILE__)}/../../util")
 require 'binary_struct'
 require 'miq-unicode'
 

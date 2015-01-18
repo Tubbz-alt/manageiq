@@ -1,5 +1,3 @@
-$:.push("#{File.dirname(__FILE__)}/../../util")
-
 require 'MiqMemory'
 require 'Win32API'
 

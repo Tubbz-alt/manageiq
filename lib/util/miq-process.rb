@@ -1,7 +1,5 @@
 # encoding: US-ASCII
 
-$:.push("#{File.dirname(__FILE__)}")
-$:.push("#{File.dirname(__FILE__)}/win32")
 require 'rubygems'
 require 'platform'
 require 'runcmd'

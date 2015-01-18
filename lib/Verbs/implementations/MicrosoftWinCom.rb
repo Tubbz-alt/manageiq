@@ -1,5 +1,3 @@
-$:.push("#{File.dirname(__FILE__)}/../../HyperV")
-
 require 'rubygems'
 require "win32/service"
 require 'MiqHyperv'

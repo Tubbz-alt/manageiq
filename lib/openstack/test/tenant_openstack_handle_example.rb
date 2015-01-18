@@ -1,7 +1,4 @@
 
-$:.push("#{File.dirname(__FILE__)}/..")
-$:.push("#{File.dirname(__FILE__)}/../..")
-
 CREDS = [
   {
     :ems_ip       => "1.2.3.4",

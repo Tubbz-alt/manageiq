@@ -1,5 +1,3 @@
-$:.push("#{File.dirname(__FILE__)}/..")
-
 require "VixDiskLib_raw"
 
 vmdk = "/vmfs/volumes/47dade33-4f4a4875-3951-00188b404015/rpo-test2/rpo-test2_1.vmdk"

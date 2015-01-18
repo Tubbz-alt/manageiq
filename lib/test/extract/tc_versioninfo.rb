@@ -1,4 +1,3 @@
-$:.push("#{File.dirname(__FILE__)}/../../metadata/util/win32")
 require 'versioninfo'
 require 'test/unit'
 

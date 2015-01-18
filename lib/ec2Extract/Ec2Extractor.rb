@@ -1,7 +1,3 @@
-$:.push("#{File.dirname(__FILE__)}/../MiqVm")
-$:.push("#{File.dirname(__FILE__)}/../discovery")
-$:.push(File.dirname(__FILE__))
-
 require 'net/ssh'
 require 'net/sftp'
 require 'timeout'

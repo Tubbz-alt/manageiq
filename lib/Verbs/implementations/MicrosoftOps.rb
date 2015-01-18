@@ -1,7 +1,3 @@
-$:.push("#{File.dirname(__FILE__)}/../../metadata/VmConfig")
-$:.push("#{File.dirname(__FILE__)}/../../metadata/MIQExtract")
-$:.push("#{File.dirname(__FILE__)}/../../util")
-
 require 'runcmd'
 require 'MIQExtract'
 require 'VmConfig'

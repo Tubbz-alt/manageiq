@@ -1,6 +1,3 @@
-$:.push("#{File.dirname(__FILE__)}/..")
-$:.push("#{File.dirname(__FILE__)}/../../MiqVm")
-
 require 'rubygems'
 require 'aws-sdk'
 require 'log4r'

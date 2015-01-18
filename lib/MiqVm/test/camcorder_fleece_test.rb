@@ -1,6 +1,3 @@
-$:.push(File.join(File.dirname(__FILE__), ".."))
-$:.push(File.join(File.dirname(__FILE__), "../.."))
-
 require 'bundler_setup'
 require 'openssl' # Required for 'Digest' in camcorder (< Ruby 2.1)
 require 'camcorder'

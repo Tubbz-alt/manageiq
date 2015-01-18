@@ -1,5 +1,3 @@
-$:.push("#{File.dirname(__FILE__)}/../../MiqVm")
-
 require 'rubygems'
 require 'log4r'
 require 'optparse'

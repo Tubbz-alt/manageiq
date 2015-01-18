@@ -1,6 +1,4 @@
 
-$:.push("#{File.dirname(__FILE__)}")
-
 require 'io/extra'
 require 'MiqBlockDevOps'
 

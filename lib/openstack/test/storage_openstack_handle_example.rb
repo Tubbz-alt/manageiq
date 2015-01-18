@@ -1,7 +1,4 @@
 
-$:.push("#{File.dirname(__FILE__)}/..")
-$:.push("#{File.dirname(__FILE__)}/../..")
-
 EMS_IP       = ""
 EMS_USERNAME = ""
 EMS_PASSWORD = ""

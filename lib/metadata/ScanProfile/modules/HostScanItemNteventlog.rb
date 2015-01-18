@@ -1,4 +1,3 @@
-$:.push("#{File.dirname(__FILE__)}/../../../metadata/util")
 require 'event_log_filter'
 
 require 'digest/md5'

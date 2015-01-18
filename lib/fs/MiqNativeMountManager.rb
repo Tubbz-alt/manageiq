@@ -1,8 +1,3 @@
-$:.push("#{File.dirname(__FILE__)}/../util")
-$:.push("#{File.dirname(__FILE__)}/../VolumeManager")
-$:.push("#{File.dirname(__FILE__)}")
-$:.push("#{File.dirname(__FILE__)}/../metadata/VmConfig")
-
 require 'rubygems'
 require 'log4r'
 require 'GetNativeCfg'

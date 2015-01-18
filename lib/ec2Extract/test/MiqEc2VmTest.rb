@@ -1,7 +1,3 @@
-$:.push(File.dirname(__FILE__))
-$:.push("#{File.dirname(__FILE__)}/..")
-$:.push("#{File.dirname(__FILE__)}/../MiqEc2Vm")
-
 require 'rubygems'
 require 'log4r'
 require 'log4r/configurator'

@@ -1,6 +1,3 @@
-$:.push(File.dirname(__FILE__))
-$:.push("#{File.dirname(__FILE__)}/..")
-
 require 'rubygems'
 require 'openssl' # Required for 'Digest' in camcorder (< Ruby 2.1)?
 require 'camcorder'

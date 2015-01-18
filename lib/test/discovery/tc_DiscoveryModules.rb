@@ -1,6 +1,5 @@
 require_relative "../test_helper"
 
-$:.push("#{File.dirname(__FILE__)}/../../discovery/modules/")
 require 'MSVirtualServerProbe'
 require 'VMwareEsxVcProbe'
 require 'VMwareServerProbe'

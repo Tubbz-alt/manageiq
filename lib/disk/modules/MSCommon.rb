@@ -1,7 +1,5 @@
-$:.push("#{File.dirname(__FILE__)}")
 require 'MiqLargeFile'
 
-$:.push("#{File.dirname(__FILE__)}/../../util")
 require 'miq-unicode'
 require 'binary_struct'
 require 'MiqMemory'

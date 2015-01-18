@@ -3,7 +3,6 @@
 require 'Ext3GroupDescriptorTable'
 require 'Ext3Inode'
 
-$:.push("#{File.dirname(__FILE__)}/../../util")
 require 'binary_struct'
 require 'miq-uuid'
 require 'stringio'

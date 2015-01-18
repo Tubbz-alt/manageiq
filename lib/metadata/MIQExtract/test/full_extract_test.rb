@@ -1,15 +1,12 @@
-$:.push("#{File.dirname(__FILE__)}/../../../util")
 require 'miq-logger'
 include Log4r
 
 $log = MIQLogger.get_log(nil, __FILE__)
 $log.level = INFO
 
-$:.push("#{File.dirname(__FILE__)}/..")
 require 'MIQExtract'
 require 'miq-process'
 
-$:.push("#{File.dirname(__FILE__)}/../../../../tools/ruby-prof")
 require 'miq-ruby-prof'
 PROFILE_INIT = false
 PROFILE_EXTRACT = false

@@ -1,7 +1,5 @@
 # encoding: US-ASCII
 
-$:.push("#{File.dirname(__FILE__)}/../../../util/")
-
 #require 'fleece_hives'
 require 'miq-xml'
 require 'miq-logger'

@@ -1,7 +1,6 @@
 require 'Ext3GroupDescriptorEntry'
 require 'Ext3AllocBitmap'
 
-$:.push("#{File.dirname(__FILE__)}/../../util")
 require 'binary_struct'
 
 module Ext3

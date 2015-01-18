@@ -1,4 +1,3 @@
-$:.push("#{File.dirname(File.expand_path(__FILE__))}/../../ext3")
 require 'Ext3Superblock'
 
 module Ext3Probe

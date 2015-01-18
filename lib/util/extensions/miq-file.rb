@@ -1,6 +1,3 @@
-$:.push("#{File.dirname(__FILE__)}/../../disk/modules")
-$:.push("#{File.dirname(__FILE__)}/..")
-
 require 'rubygems'
 require 'platform'
 require "Win32API" if Platform::OS == :win32

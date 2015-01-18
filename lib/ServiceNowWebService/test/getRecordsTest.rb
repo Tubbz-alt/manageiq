@@ -1,6 +1,4 @@
 # $:.push("#{File.dirname(__FILE__)}/../..") # miq/lib
-$:.push("/var/www/miq/lib")
-
 require_relative '../../bundler_setup'
 require 'ServiceNowWebService/SnSctaskClientBase'
 

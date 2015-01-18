@@ -3,8 +3,6 @@
 # Windows dynamic disks
 #
 
-$:.push("#{File.dirname(__FILE__)}/../util")
-
 require 'ostruct'
 require 'binary_struct'
 require 'miq-uuid'
@@ -448,8 +446,6 @@ end # class LdmMdParser
 
 if __FILE__ == $0
 	SD = File.dirname(__FILE__)
-	$: << File.join(SD, "../disk")
-	
 	require 'rubygems'
 	require 'log4r'
 	require 'ostruct'

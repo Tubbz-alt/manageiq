@@ -1,6 +1,5 @@
 require 'Fat32BootSect'
 
-$:.push("#{File.dirname(__FILE__)}/../../util")
 require 'MiqMemory'
 
 module Fat32

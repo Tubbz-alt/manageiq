@@ -2,7 +2,6 @@ require 'stringio'
 
 require 'Fat32DirectoryEntry'
 
-$:.push("#{File.dirname(__FILE__)}/../../util")
 require 'MiqMemory'
 
 # ////////////////////////////////////////////////////////////////////////////

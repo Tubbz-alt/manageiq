@@ -1,7 +1,5 @@
 #!/usr/bin/env ruby
 
-$:.push("#{File.dirname(__FILE__)}/../../util")
-
 require 'rubygems'
 require 'log4r'
 require 'optparse'

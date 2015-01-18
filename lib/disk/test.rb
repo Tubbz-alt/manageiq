@@ -1,5 +1,3 @@
-$: << File.dirname(__FILE__)
-
 begin
 	require 'rubygems'
 	require 'log4r'

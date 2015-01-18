@@ -1,4 +1,3 @@
-$:.push("#{File.dirname(__FILE__)}")
 require 'MiqKvmHost'
 
 class MiqKvmInventory

@@ -1,7 +1,4 @@
 
-$:.push("#{File.dirname(__FILE__)}/..")
-$:.push("#{File.dirname(__FILE__)}/../../../MiqVm")
-
 require 'MIQExtract'
 require 'rubygems'
 require 'log4r'

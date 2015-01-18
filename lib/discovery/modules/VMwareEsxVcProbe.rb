@@ -1,6 +1,3 @@
-$:.push("#{File.dirname(__FILE__)}/..")
-$:.push("#{File.dirname(__FILE__)}/../../VMwareWebService")
-
 require 'PortScan'
 require 'MiqVimClientBase'
 

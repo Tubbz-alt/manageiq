@@ -1,5 +1,3 @@
-$:.push("#{File.dirname(__FILE__)}/modules")
-
 class ScanItemBase
   SCAN_TYPE_PROP = "item_type"
 

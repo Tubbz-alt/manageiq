@@ -2,8 +2,6 @@ base_dir = "/miq"
 
 initStr = ENV.fetch("MIQ_INIT_STR", nil).unpack('m').join
 ENV["MIQ_INIT_STR"] = "XXXX"
-$: << "#{base_dir}/lib/encryption"
-
 eval(initStr)
 require "MiqLoad"
 

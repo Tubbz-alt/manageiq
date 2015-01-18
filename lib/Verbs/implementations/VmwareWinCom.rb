@@ -1,7 +1,3 @@
-$:.push("#{File.dirname(__FILE__)}/../../metadata/util/win32")
-$:.push("#{File.dirname(__FILE__)}/../../metadata/VmConfig")
-$:.push("#{File.dirname(__FILE__)}/../../util")
-
 require 'win32ole'
 require 'ostruct'
 require 'win32/registry'

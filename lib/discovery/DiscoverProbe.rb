@@ -1,5 +1,3 @@
-$:.push("#{File.dirname(__FILE__)}/modules")
-
 module DiscoverProbe
 	MODDIR = File.join(File.dirname(__FILE__), "modules")
 	

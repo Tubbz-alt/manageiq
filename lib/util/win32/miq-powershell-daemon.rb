@@ -1,5 +1,3 @@
-$:.push("#{File.dirname(__FILE__)}")
-$:.push("#{File.dirname(__FILE__)}/..")
 require 'miq-powershell'
 require 'miq-process'
 require 'miq-password'

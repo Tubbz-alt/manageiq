@@ -1,5 +1,3 @@
-$:.push("#{File.dirname(__FILE__)}/../VixDiskLib")
-
 require 'DMiqVim'
 require 'MiqVimVm'
 require 'MiqVimHost'

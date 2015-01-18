@@ -1,6 +1,3 @@
-$:.push("#{File.dirname(__FILE__)}/win32")
-$:.push("#{File.dirname(__FILE__)}/../../util")
-
 require 'rubygems'
 require 'time'
 require 'peheader'
@@ -242,7 +239,6 @@ end
 # Only run if we are calling this script directly
 if __FILE__ == $0 then
 #if 1
-  $:.push("#{File.dirname(__FILE__)}/../../MiqVm")
   require 'MiqVm'
   require 'miq-logger'
 

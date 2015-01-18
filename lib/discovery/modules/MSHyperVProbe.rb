@@ -1,6 +1,3 @@
-$:.push("#{File.dirname(__FILE__)}/..")
-$:.push("#{File.dirname(__FILE__)}/../../util/win32")
-
 require 'PortScan'
 require 'miq-wmi'
 require 'miq-password'

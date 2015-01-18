@@ -1,10 +1,8 @@
-$:.push("#{File.dirname(__FILE__)}")
 require 'rubygems'
 require 'extensions/miq-blank'
 require 'platform'
 require 'runcmd'
 if Platform::OS == :win32
-  $:.push("#{File.dirname(__FILE__)}/win32")
   require 'miq-wmi'
 end
 

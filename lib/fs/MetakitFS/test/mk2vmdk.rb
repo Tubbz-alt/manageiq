@@ -1,5 +1,3 @@
-$:.push("#{File.dirname(__FILE__)}/../../../disk")
-
 require 'rubygems'
 require 'log4r'
 require 'ostruct'

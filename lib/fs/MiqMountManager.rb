@@ -1,7 +1,3 @@
-$:.push("#{File.dirname(__FILE__)}/MiqFS")
-$:.push("#{File.dirname(__FILE__)}/MetakitFS")
-$:.push("#{File.dirname(__FILE__)}/../VolumeManager")
-
 require 'MiqFS'
 require 'MiqNativeVolumeManager'
 require 'MountManagerProbe'

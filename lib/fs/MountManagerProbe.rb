@@ -1,5 +1,3 @@
-$:.push("#{File.dirname(__FILE__)}/modules")
-
 module MountManagerProbe
 	MODDIR = File.expand_path(File.join(File.dirname(__FILE__), "modules"))
 

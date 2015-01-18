@@ -1,7 +1,4 @@
 
-$:.push(File.dirname(__FILE__))
-$:.push("#{File.dirname(__FILE__)}/../VMwareWebService_hs")
-
 require 'sync'
 require 'VcoService'
 require 'MiqVimDump'

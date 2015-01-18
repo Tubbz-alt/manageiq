@@ -1,7 +1,6 @@
 require 'test/unit'
 require 'enumerator'
 
-$:.push("#{File.dirname(__FILE__)}/..")
 require 'Ext3BlockPointersPath'
 include  Ext3
 

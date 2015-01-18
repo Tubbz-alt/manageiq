@@ -1,7 +1,3 @@
-$:.push("#{File.dirname(__FILE__)}/../../util")
-$:.push("#{File.dirname(__FILE__)}/../../VMwareWebService")
-$:.push("#{File.dirname(__FILE__)}/../../kvm")
-
 require 'ostruct'
 require 'miq-xml'
 require 'runcmd'

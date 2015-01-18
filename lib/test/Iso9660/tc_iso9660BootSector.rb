@@ -1,10 +1,8 @@
 require 'ostruct'
 require 'test/unit'
 
-$:.push("#{File.dirname(__FILE__)}/../../disk")
 require 'MiqDisk'
 
-$:.push("#{File.dirname(__FILE__)}/../../fs/iso9660")
 require 'Iso9660BootSector'
 include Iso9660
 

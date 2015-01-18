@@ -1,7 +1,3 @@
-$: << File.join(File.dirname(__FILE__), "../..")
-$: << File.join(File.dirname(__FILE__), "../../disk")
-$: << File.join(File.dirname(__FILE__), "../../fs/MiqFS")
-
 require 'bundler_setup'
 require 'log4r'
 require 'ostruct'

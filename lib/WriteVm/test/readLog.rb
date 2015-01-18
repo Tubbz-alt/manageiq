@@ -1,7 +1,3 @@
-$:.push("#{File.dirname(__FILE__)}/../../VMwareWebService")
-$:.push("#{File.dirname(__FILE__)}/../../disk")
-$:.push("#{File.dirname(__FILE__)}/..")
-
 require 'rubygems'
 require 'log4r'
 require 'MiqVim'

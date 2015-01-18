@@ -1,5 +1,3 @@
-$:.push("#{File.dirname(__FILE__)}/..")
-
 require "NmaCore"
 require "../util/MiqDumpObj"
 

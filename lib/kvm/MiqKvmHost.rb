@@ -1,6 +1,3 @@
-$:.push("#{File.dirname(__FILE__)}/../libvirt")
-$:.push("#{File.dirname(__FILE__)}/../util")
-$:.push("#{File.dirname(__FILE__)}")
 require 'miq-hash_struct'
 require 'MiqLibvirt'
 require 'MiqKvmVm'

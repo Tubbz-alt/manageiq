@@ -1,4 +1,3 @@
-$:.push("#{File.dirname(__FILE__)}/../../disk/")
 require 'MiqDisk'
 require 'ostruct'
 require 'enumerator'

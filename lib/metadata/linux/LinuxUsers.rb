@@ -1,5 +1,3 @@
-$:.push("#{File.dirname(__FILE__)}/../../util")
-
 require 'binary_struct'
 require 'miq-hash_struct'
 require 'miq-xml'
@@ -254,8 +252,6 @@ module MiqLinux
 end # module MiqLinux
 
 if __FILE__ == $0
-	$:.push("#{File.dirname(__FILE__)}/../../MiqVm")
-    
 	require 'rubygems'
 	require 'log4r'
 	require 'MiqVm'

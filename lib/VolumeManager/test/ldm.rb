@@ -1,10 +1,4 @@
 
-$:.push("#{File.dirname(__FILE__)}/../../metadata/VmConfig")
-$:.push("#{File.dirname(__FILE__)}/../../util/extensions")
-$:.push("#{File.dirname(__FILE__)}/../../fs/MiqFS")
-$:.push("#{File.dirname(__FILE__)}/../../MiqVm")
-$:.push("#{File.dirname(__FILE__)}/..")
-
 require 'rubygems'
 require 'log4r'
 require 'ostruct'

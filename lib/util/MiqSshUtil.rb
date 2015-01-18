@@ -1,5 +1,3 @@
-$:.push("#{File.dirname(__FILE__)}")
-
 require "rubygems"
 require 'net/ssh'
 require 'net/ssh/version'  unless defined?(Net::SSH::Version)

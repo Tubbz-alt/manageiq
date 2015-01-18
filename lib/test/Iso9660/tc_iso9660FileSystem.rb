@@ -1,10 +1,8 @@
 require 'ostruct'
 require 'test/unit'
 
-$:.push("#{File.dirname(__FILE__)}/../../disk")
 require 'MiqDisk'
 
-$:.push("#{File.dirname(__FILE__)}/../../fs/MiqFS")
 require 'MiqFS'
 
 ONE_MEG = 0x0000100000

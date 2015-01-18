@@ -1,4 +1,3 @@
-$:.push("#{File.dirname(__FILE__)}/xml")
 require 'time'
 require 'xml/miq_rexml'
 require 'xml/xml_hash'

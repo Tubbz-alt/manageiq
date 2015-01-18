@@ -3,8 +3,6 @@ ENV["MIQ_INIT_STR"] = "XXXX"
 
 baseDir = File.dirname(__FILE__)
 
-$: << "#{baseDir}/lib/encryption"
-
 cwd = Dir.pwd
 Dir.chdir(baseDir)
 `ln -s libcrypto.so.0.9.7a libcrypto.so.4`

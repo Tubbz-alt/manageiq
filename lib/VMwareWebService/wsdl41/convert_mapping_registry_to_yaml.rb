@@ -47,7 +47,6 @@ end
 
 EncodedRegistry = LiteralRegistry = Registry
 
-$:.push(".")
 require 'vimws25MappingRegistry'
 
 require 'fileutils'

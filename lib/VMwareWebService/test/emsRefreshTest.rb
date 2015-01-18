@@ -1,9 +1,5 @@
 USE_BROKER = true
 
-$:.push("#{File.dirname(__FILE__)}/..")
-$:.push("#{File.dirname(__FILE__)}/../../util")
-$:.push("#{File.dirname(__FILE__)}/../../util/extensions")
-
 require_relative '../../bundler_setup'
 require 'MiqVimBroker'
 require 'MiqVim'

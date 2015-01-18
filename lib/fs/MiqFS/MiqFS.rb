@@ -1,10 +1,7 @@
-$:.push("#{File.dirname(__FILE__)}/../../util/extensions")
 require 'miq-string'
 
 require 'stringio'
 require 'find'
-
-$:.push("#{File.dirname(__FILE__)}/modules")
 
 require 'FsProbe'
 

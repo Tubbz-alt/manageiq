@@ -1,5 +1,3 @@
-$:.push("#{File.dirname(__FILE__)}")
-
 require 'MiqLargeFile'
 
 module LocalDevMod

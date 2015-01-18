@@ -1,6 +1,3 @@
-$:.push(File.dirname(__FILE__))
-$:.push("#{File.dirname(__FILE__)}/../fs")
-
 require 'rubygems'
 require 'log4r'
 

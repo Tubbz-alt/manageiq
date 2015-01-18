@@ -1,7 +1,6 @@
 require 'rufus/lru'
 
 # Ext4 stuff.
-$:.push("#{File.dirname(File.expand_path(__FILE__))}/../../ext4")
 require 'Ext4Superblock'
 require 'Ext4DirectoryEntry'
 require 'Ext4Directory'

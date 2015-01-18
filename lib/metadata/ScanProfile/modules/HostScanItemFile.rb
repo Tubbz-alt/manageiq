@@ -1,4 +1,3 @@
-$:.push("#{File.dirname(__FILE__)}/../../linux")
 require 'LinuxUtils'
 
 module HostScanItemFile

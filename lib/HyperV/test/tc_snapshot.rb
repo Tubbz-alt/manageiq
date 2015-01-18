@@ -1,5 +1,3 @@
-$:.push("#{File.dirname(__FILE__)}/..")
-$:.push("#{File.dirname(__FILE__)}/../uitl")
 require 'test/unit'
 require 'miq-logger'
 require 'MiqHyperv'

@@ -1,7 +1,4 @@
 
-$:.push("#{File.dirname(__FILE__)}/..")
-$:.push("#{File.dirname(__FILE__)}/../..")
-
 require 'bundler_setup'
 require 'log4r'
 require 'ostruct'

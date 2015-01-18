@@ -1,7 +1,6 @@
 require 'rubygems'
 #gem 'Platform'
 require 'platform'
-$:.push("../../util")
 require 'miq-system'
 
 if Platform::IMPL == :linux

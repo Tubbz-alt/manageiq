@@ -1,4 +1,3 @@
-$:.push("#{File.dirname(__FILE__)}/../../metadata/util/")
 require 'md5deep'
 require 'test/unit'
 

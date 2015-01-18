@@ -1,9 +1,3 @@
-$:.push("#{File.dirname(__FILE__)}")
-$:.push("#{File.dirname(__FILE__)}/../../util")
-$:.push("#{File.dirname(__FILE__)}/../../disk/modules")
-$:.push("#{File.dirname(__FILE__)}/../VMMount")
-$:.push("#{File.dirname(__FILE__)}/../../VMwareWebService")
-
 require 'pathname2'
 require 'VMMount'
 require 'miq-unicode'

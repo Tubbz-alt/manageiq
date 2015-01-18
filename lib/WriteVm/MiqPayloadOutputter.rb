@@ -1,5 +1,3 @@
-$:.push("#{File.dirname(__FILE__)}/../metadata/VmConfig")
-
 require 'rubygems'
 require 'log4r'
 require 'log4r/outputter/iooutputter'

@@ -1,9 +1,3 @@
-$:.push("#{File.dirname(__FILE__)}/../metadata/VmConfig")
-$:.push("#{File.dirname(__FILE__)}/../metadata/MIQExtract")
-$:.push("#{File.dirname(__FILE__)}/../disk")
-$:.push("#{File.dirname(__FILE__)}/../fs")
-$:.push("#{File.dirname(__FILE__)}/../VolumeManager")
-
 require 'ostruct'
 require 'VmConfig'
 require 'MiqDisk'
@@ -205,8 +199,6 @@ class MiqVm
 end # class MiqVm
 
 if __FILE__ == $0
-    $:.push("#{File.dirname(__FILE__)}/../metadata/util/win32")
-    
     require 'rubygems'
     require 'log4r'
     require 'boot_info_win'

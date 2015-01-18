@@ -4,9 +4,6 @@ require 'yaml'
 require 'ostruct'
 require 'zlib'
 
-$: << "#{File.dirname(__FILE__)}/.."
-$: << "#{File.dirname(__FILE__)}/../../MiqFS"
-
 require "MiqFS"
 require "MetakitFS"
 
