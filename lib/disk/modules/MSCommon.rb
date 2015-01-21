@@ -1,8 +1,8 @@
-require 'MiqLargeFile'
+require 'disk/modules/MiqLargeFile'
 
-require 'miq-unicode'
+require 'util/miq-unicode'
 require 'binary_struct'
-require 'MiqMemory'
+require 'util/MiqMemory'
 
 
 module MSCommon

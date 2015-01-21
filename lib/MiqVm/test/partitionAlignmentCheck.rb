@@ -6,7 +6,7 @@ $LOAD_PATH.push("#{File.dirname(__FILE__)}/../../VmwareWebService")
 require_relative '../../bundler_setup'
 require 'ostruct'
 require 'log4r'
-require 'MiqVm'
+require 'MiqVm/MiqVm'
 require 'MiqVim'
 
 class ConsoleFormatter < Log4r::Formatter

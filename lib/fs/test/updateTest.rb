@@ -1,7 +1,7 @@
 require 'log4r'
 require 'ostruct'
 
-require 'MiqFS'
+require 'fs/MiqFS/MiqFS'
 require 'MiqFsUtil'
 require 'MetakitFS'
 require 'LocalFS'

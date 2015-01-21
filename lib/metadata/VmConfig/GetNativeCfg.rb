@@ -1,6 +1,6 @@
-require 'miq-xml'
+require 'util/miq-xml'
 require 'runcmd'
-require 'VmConfig'
+require 'metadata/VmConfig/VmConfig'
 
 class GetNativeCfg
 	

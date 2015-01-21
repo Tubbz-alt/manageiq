@@ -1,5 +1,5 @@
-require 'PortScan'
-require 'MiqVimClientBase'
+require 'discovery/PortScan'
+require 'VMwareWebService/MiqVimClientBase'
 
 class VMwareEsxVcProbe
     

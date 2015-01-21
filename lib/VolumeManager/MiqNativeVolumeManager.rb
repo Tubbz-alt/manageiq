@@ -1,5 +1,5 @@
 require "ostruct"
-require "MiqDisk"
+require "disk/MiqDisk"
 require 'binary_struct'
 require 'MiqLvm'
 

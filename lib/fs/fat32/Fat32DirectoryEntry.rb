@@ -3,7 +3,7 @@
 require 'stringio'
 
 require 'binary_struct'
-require 'miq-unicode'
+require 'util/miq-unicode'
 
 # ////////////////////////////////////////////////////////////////////////////
 # // Data definitions.

@@ -1,9 +1,7 @@
 require 'ostruct'
-require 'enumerator'
-
 require 'binary_struct'
-require_relative'MiqSqlite3Util'
-require_relative'MiqSqlite3Cell'
+require 'db/MiqSqlite/MiqSqlite3Util'
+require 'db/MiqSqlite/MiqSqlite3Cell'
 
 module MiqSqlite3DB
   class MiqSqlite3Page

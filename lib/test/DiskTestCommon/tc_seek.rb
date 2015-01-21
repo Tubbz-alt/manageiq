@@ -3,9 +3,9 @@ require 'ostruct'
 
 require 'VmsFromYaml'
 
-require 'MiqDisk'
+require 'disk/MiqDisk'
 
-require 'MiqFS'
+require 'fs/MiqFS/MiqFS'
 
 class TestSeek < Test::Unit::TestCase
 	

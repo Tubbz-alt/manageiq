@@ -1,6 +1,5 @@
-
 require 'io/extra'
-require 'MiqBlockDevOps'
+require 'disk/modules/MiqBlockDevOps'
 
 class RawBlockIO
 

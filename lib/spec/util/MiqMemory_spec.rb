@@ -2,7 +2,7 @@
 
 require "spec_helper"
 
-require 'MiqMemory'
+require 'util/MiqMemory'
 
 describe MiqMemory do
   MIQ_MEMORY_SIZES = [

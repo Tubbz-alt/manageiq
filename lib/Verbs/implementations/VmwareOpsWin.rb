@@ -1,6 +1,6 @@
 require 'runcmd'
 require 'MIQExtract'
-require 'VmConfig'
+require 'metadata/VmConfig/VmConfig'
 require 'VmwareWinCom'
 
 module VMWareOpsWin

@@ -62,8 +62,8 @@ end # class MiqVmFsUtil
 if __FILE__ == $0
     require 'log4r'
     require 'boot_info_win'
-    require 'MiqVm'
-    require "MiqFS"
+    require 'MiqVm/MiqVm'
+    require "fs/MiqFS/MiqFS"
     
     #
     # *** Change this to point to the VM directory.

@@ -1,4 +1,4 @@
-require 'miq-xml'
+require 'util/miq-xml'
 require 'miq-extensions'
 require 'MiqSshUtil'
 require 'MiqLibvirtVm'

@@ -1,9 +1,9 @@
 # encoding: US-ASCII
 
 require 'binary_struct'
-require 'miq-unicode'
+require 'util/miq-unicode'
 require 'enumerator'
-require 'miq-xml'
+require 'util/miq-xml'
 require 'xml/xml_hash'
 
 # Constants

@@ -1,6 +1,6 @@
-require 'PortScan'
-require 'miq-wmi'
-require 'miq-password'
+require 'discovery/PortScan'
+require 'util/win32/miq-wmi'
+require 'util/miq-password'
 
 # Ports:
 #        Check standard MS ports 135, 139

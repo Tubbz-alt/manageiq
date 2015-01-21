@@ -1,5 +1,5 @@
-require 'MiqLargeFile'
-require 'MSCommon'
+require 'disk/modules/MiqLargeFile'
+require 'disk/modules/MSCommon'
 
 module MSVSDiskProbe
 	

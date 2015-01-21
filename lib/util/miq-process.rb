@@ -2,8 +2,8 @@
 
 require 'platform'
 require 'runcmd'
-require 'miq-wmi'
-require 'miq-system'
+require 'util/win32/miq-wmi'
+require 'util/miq-system'
 if Platform::OS == :win32
   require 'win32/miq-win32-process'
 end

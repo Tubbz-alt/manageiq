@@ -1,6 +1,6 @@
 require 'binary_struct'
 require 'miq-hash_struct'
-require 'miq-xml'
+require 'util/miq-xml'
 
 module MiqLinux
   
@@ -253,7 +253,7 @@ end # module MiqLinux
 
 if __FILE__ == $0
 	require 'log4r'
-	require 'MiqVm'
+	require 'MiqVm/MiqVm'
 	
 	vmDir = File.join(ENV.fetch("HOME", '.'), 'VMs')
 	puts "vmDir = #{vmDir}"

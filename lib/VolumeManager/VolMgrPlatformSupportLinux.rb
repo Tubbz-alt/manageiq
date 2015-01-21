@@ -1,4 +1,4 @@
-require 'miq-password'
+require 'util/miq-password'
 require 'MiqVim'
 
 module VolMgrPlatformSupportLinux

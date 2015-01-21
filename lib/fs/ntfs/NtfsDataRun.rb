@@ -1,4 +1,4 @@
-require 'MiqMemory'
+require 'util/MiqMemory'
 
 module NTFS
 	

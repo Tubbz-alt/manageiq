@@ -1,4 +1,4 @@
-require 'MiqDisk'
+require 'disk/MiqDisk'
 require 'ostruct'
 require 'enumerator'
 require 'test/unit'

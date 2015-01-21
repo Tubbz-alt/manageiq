@@ -448,7 +448,7 @@ if __FILE__ == $0
 	SD = File.dirname(__FILE__)
 	require 'log4r'
 	require 'ostruct'
-	require 'MiqDisk'
+	require 'disk/MiqDisk'
 
 	#
 	# Formatter to output log messages to the console.

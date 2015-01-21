@@ -1,6 +1,6 @@
-require_relative 'MiqBdb'
-require_relative 'MiqBdbHash'
-require_relative 'MiqBdbPage'
+require 'db/MiqBdb/MiqBdb'
+require 'db/MiqBdb/MiqBdbHash'
+require 'db/MiqBdb/MiqBdbPage'
 
 module MiqBerkeleyDB
   

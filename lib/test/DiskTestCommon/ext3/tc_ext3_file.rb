@@ -2,9 +2,9 @@ require 'ostruct'
 
 require 'VmsFromYaml'
 
-require 'MiqDisk'
+require 'disk/MiqDisk'
 
-require 'MiqFS'
+require 'fs/MiqFS/MiqFS'
 
 class Ext3TestFile < Test::Unit::TestCase
 	

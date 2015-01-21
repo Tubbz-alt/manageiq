@@ -1,7 +1,7 @@
 require 'binary_struct'
 require 'util/miq-hash_struct'
 
-require_relative 'MiqBdbPage'
+require 'db/MiqBdb/MiqBdbPage'
 
 module MiqBerkeleyDB
 

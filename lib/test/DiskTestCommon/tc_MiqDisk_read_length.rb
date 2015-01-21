@@ -2,7 +2,7 @@ require 'ostruct'
 
 require 'VmsFromYaml'
 
-require 'MiqDisk'
+require 'disk/MiqDisk'
 
 class TestMiqDiskReadLen < Test::Unit::TestCase
 	

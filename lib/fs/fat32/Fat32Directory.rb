@@ -2,7 +2,7 @@ require 'stringio'
 
 require 'Fat32DirectoryEntry'
 
-require 'MiqMemory'
+require 'util/MiqMemory'
 
 # ////////////////////////////////////////////////////////////////////////////
 # // Data definitions.

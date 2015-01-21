@@ -1,6 +1,6 @@
 require 'aws-sdk'
 require 'log4r'
-require 'MiqVm'
+require 'MiqVm/MiqVm'
 require 'Ec2InstanceMetadata'
 require 'MiqEc2EbsInstance'
 require_relative '../credentials'

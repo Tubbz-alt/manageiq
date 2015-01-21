@@ -1,4 +1,4 @@
-require_relative 'DiscoverProbe'
+require 'discovery/DiscoverProbe'
 
 #######################################################################
 #

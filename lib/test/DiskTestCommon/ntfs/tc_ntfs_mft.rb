@@ -5,7 +5,7 @@ require 'ostruct'
 
 require 'VmsFromYaml'
 
-require 'MiqDisk'
+require 'disk/MiqDisk'
 
 require 'NtfsBootSect'
 require 'NtfsMftEntry'

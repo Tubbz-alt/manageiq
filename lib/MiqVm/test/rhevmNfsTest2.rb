@@ -5,7 +5,7 @@
 require 'bundler_setup'
 require 'log4r'
 require 'ostruct'
-require 'MiqVm'
+require 'MiqVm/MiqVm'
 
 class ConsoleFormatter < Log4r::Formatter
 	def format(event)

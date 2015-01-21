@@ -195,12 +195,9 @@
 #       *     zero or more pages numbers of leaves
 
 require 'ostruct'
-require 'enumerator'
-
 require 'binary_struct'
-
-require_relative 'MiqSqlite3Page'
-require_relative 'MiqSqlite3Table'
+require 'db/MiqSqlite/MiqSqlite3Page'
+require 'db/MiqSqlite/MiqSqlite3Table'
 
 module MiqSqlite3DB
   

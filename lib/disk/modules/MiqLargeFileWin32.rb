@@ -1,4 +1,4 @@
-require 'MiqMemory'
+require 'util/MiqMemory'
 require 'Win32API'
 
 class MiqLargeFileWin32

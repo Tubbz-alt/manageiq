@@ -1,5 +1,5 @@
 require 'xml_utils'
-require 'miq-xml'
+require 'util/miq-xml'
 require 'miq-logger'
 require 'peheader'
 

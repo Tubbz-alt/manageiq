@@ -1,4 +1,4 @@
-require 'MiqFS'
+require 'fs/MiqFS/MiqFS'
 
 module LinuxMountProbe
     

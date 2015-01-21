@@ -4,7 +4,7 @@ require 'Ext4ExtentHeader'
 require 'Ext4ExtentIndex'
 
 require 'binary_struct'
-require 'MiqMemory'
+require 'util/MiqMemory'
 
 module Ext4
 

@@ -1,6 +1,6 @@
 # Only run if we are calling this script directly
 begin
-  require 'miq-xml'
+  require 'util/miq-xml'
   
   diff_dir = "d:/temp/xml"
   cfg = {

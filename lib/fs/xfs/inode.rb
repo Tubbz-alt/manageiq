@@ -1,6 +1,6 @@
 $LOAD_PATH.push("#{File.dirname(__FILE__)}/../../util")
 require 'binary_struct'
-require 'MiqMemory'
+require 'util/MiqMemory'
 require 'more_core_extensions/all'
 require 'superblock'
 require 'bmap_btree_record'

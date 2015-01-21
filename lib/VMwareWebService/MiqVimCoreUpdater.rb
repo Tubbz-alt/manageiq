@@ -1,4 +1,4 @@
-require 'MiqVimClientBase'
+require 'VMwareWebService/MiqVimClientBase'
 require 'MiqVimDump'
 require 'VimPropMaps'
 

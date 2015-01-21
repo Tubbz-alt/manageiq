@@ -1,6 +1,6 @@
-require 'MiqDisk'
-require 'MiqFS'
-require 'VixDiskLib'
+require 'disk/MiqDisk'
+require 'fs/MiqFS/MiqFS'
+require 'VixDiskLib/VixDiskLib'
 require 'ostruct'
 require 'log4r'
 

@@ -13,7 +13,7 @@
 #
 # == Usage
 #
-# require "pathname2"
+# require "util/pathname2"
 # 
 # # Unix
 # path1 = Pathname2.new("/foo/bar/baz")

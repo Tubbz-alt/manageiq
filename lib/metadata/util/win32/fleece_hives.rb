@@ -1,4 +1,4 @@
-require 'miq-xml'
+require 'util/miq-xml'
 require 'digest/md5'
 require 'remote-registry'
 require 'enumerator'

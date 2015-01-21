@@ -1,5 +1,5 @@
 require 'test/unit'
-require 'miq-xml'
+require 'util/miq-xml'
 
 class XmlEncoding < Test::Unit::TestCase
 

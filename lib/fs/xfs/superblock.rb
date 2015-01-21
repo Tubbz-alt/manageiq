@@ -4,7 +4,7 @@ $LOAD_PATH.push("#{File.dirname(__FILE__)}/../../util")
 require 'binary_struct'
 require 'miq-uuid'
 require 'stringio'
-require 'MiqMemory'
+require 'util/MiqMemory'
 require 'allocation_group'
 require 'inode_map'
 require 'inode'

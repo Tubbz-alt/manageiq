@@ -1,6 +1,6 @@
 require 'Fat32BootSect'
 
-require 'MiqMemory'
+require 'util/MiqMemory'
 
 module Fat32
 

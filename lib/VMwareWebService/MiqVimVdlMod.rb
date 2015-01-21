@@ -5,7 +5,7 @@ module MiqVimVdlConnectionMod
 	# Return a VixDiskLib connection object for the same server that VIM is connected to.
 	#
 	def vdlConnection
-		require 'VixDiskLib'
+		require 'VixDiskLib/VixDiskLib'
         VixDiskLib.init(lambda { |s| $vim_log.info  "VMware(VixDiskLib): #{s}" },
                         lambda { |s| $vim_log.warn  "VMware(VixDiskLib): #{s}" },
                         lambda { |s| $vim_log.error "VMware(VixDiskLib): #{s}" })
@@ -34,7 +34,7 @@ module MiqVimVdlVcConnectionMod
 	# has finished accessing the VM's disk files.
 	#
 	def vdlVcConnection
-	    require 'VixDiskLib'
+	    require 'VixDiskLib/VixDiskLib'
 	
         VixDiskLib.init(lambda { |s| $vim_log.info  "VMware(VixDiskLib): #{s}" },
                         lambda { |s| $vim_log.warn  "VMware(VixDiskLib): #{s}" },

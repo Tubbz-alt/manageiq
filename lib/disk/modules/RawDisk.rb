@@ -1,4 +1,4 @@
-require 'MiqLargeFile'
+require 'disk/modules/MiqLargeFile'
 
 module RawDisk
 	def d_init

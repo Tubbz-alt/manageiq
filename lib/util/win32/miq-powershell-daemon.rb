@@ -1,6 +1,6 @@
 require 'miq-powershell'
 require 'miq-process'
-require 'miq-password'
+require 'util/miq-password'
 
 module MiqPowerShell
   class Daemon

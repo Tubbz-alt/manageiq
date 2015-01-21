@@ -1,7 +1,7 @@
 require 'time'
 require 'peheader'
 require 'versioninfo'
-require 'miq-xml'
+require 'util/miq-xml'
 require 'ostruct'
 require 'miq-encode'
 
@@ -238,7 +238,7 @@ end
 # Only run if we are calling this script directly
 if __FILE__ == $0 then
 #if 1
-  require 'MiqVm'
+  require 'MiqVm/MiqVm'
   require 'miq-logger'
 
   $log = MIQLogger.get_log(nil, __FILE__)

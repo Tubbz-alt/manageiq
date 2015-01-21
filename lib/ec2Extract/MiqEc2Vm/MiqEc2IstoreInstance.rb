@@ -1,7 +1,7 @@
-require 'PortScan'
+require 'discovery/PortScan'
 require 'net/ssh'
 require 'net/sftp'
-require 'miq-xml'
+require 'util/miq-xml'
 
 require_relative 'MiqEc2VmBase'
 

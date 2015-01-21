@@ -1,6 +1,6 @@
 require 'xml_utils'
 #require 'fleece_hives'
-require 'miq-xml'
+require 'util/miq-xml'
 require 'miq-logger'
 
 module MiqWin32

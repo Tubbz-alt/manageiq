@@ -1,4 +1,4 @@
-require "VixDiskLib"
+require "VixDiskLib/VixDiskLib"
 require 'enumerator'
 require 'log4r'
 

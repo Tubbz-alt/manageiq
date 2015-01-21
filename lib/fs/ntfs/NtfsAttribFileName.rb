@@ -1,7 +1,7 @@
 require 'NtUtil'
 
 require 'binary_struct'
-require 'miq-unicode'
+require 'util/miq-unicode'
 
 require 'NtfsAttribStandardInformation'
 

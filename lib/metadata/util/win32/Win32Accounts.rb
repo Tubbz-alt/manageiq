@@ -1,7 +1,7 @@
 # encoding: US-ASCII
 
 #require 'fleece_hives'
-require 'miq-xml'
+require 'util/miq-xml'
 require 'miq-logger'
 require 'enumerator'
 

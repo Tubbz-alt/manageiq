@@ -4,8 +4,8 @@ require 'timeout'
 require 'aws-sdk'
 require 'ostruct'
 require 'tmpdir'
-require 'MiqVm'
-require 'PortScan'
+require 'MiqVm/MiqVm'
+require 'discovery/PortScan'
 require 'Ec2Payload'
 
 class Ec2Extractor

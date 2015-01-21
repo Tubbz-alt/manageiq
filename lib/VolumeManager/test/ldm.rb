@@ -2,10 +2,10 @@
 require 'log4r'
 require 'ostruct'
 require "miq-blank"
-require 'VmConfig'
+require 'metadata/VmConfig/VmConfig'
 require "MiqVolumeManager"
-require "MiqFS"
-require "MiqVm"
+require "fs/MiqFS/MiqFS"
+require "MiqVm/MiqVm"
 require 'MiqVimBroker'
 
 SRC_VM = raise "please define"

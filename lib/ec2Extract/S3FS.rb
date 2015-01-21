@@ -1,5 +1,5 @@
 require 'aws-sdk'
-require 'MiqFS'
+require 'fs/MiqFS/MiqFS'
 
 module S3FS
 	

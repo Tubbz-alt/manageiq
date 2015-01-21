@@ -1,5 +1,5 @@
 require 'test/unit'
-require 'miq-xml'
+require 'util/miq-xml'
 require 'xmlsimple'
 
 class TestXmlHashMethods < Test::Unit::TestCase

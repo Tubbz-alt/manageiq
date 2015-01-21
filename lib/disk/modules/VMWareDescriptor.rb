@@ -1,4 +1,4 @@
-require 'pathname2'
+require 'util/pathname2'
 
 module VMWareDescriptor
 	

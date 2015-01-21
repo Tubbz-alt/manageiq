@@ -1,7 +1,7 @@
 
 require 'MIQExtract'
 require 'log4r'
-require 'MiqVm'
+require 'MiqVm/MiqVm'
     
 # vmDir = "v:"
 vmDir = File.join(ENV.fetch("HOME", '.'), 'VMs')

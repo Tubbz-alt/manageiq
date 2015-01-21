@@ -1,7 +1,7 @@
-require 'MiqLargeFile'
+require 'disk/modules/MiqLargeFile'
 
 require 'binary_struct'
-require 'MiqMemory'
+require 'util/MiqMemory'
 
 module VMWareSparseDisk
 

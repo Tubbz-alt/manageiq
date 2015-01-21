@@ -1,4 +1,4 @@
-require 'MiqFS'
+require 'fs/MiqFS/MiqFS'
 require 'system_path_win'
 
 module WinMountProbe

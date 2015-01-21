@@ -2,7 +2,7 @@
 
 require "spec_helper"
 
-require 'miq-xml'
+require 'util/miq-xml'
 
 describe MIQRexml do
   it "attribute encoding" do

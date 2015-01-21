@@ -1,7 +1,7 @@
 require 'log4r'
 require 'MiqVim'
 require 'MiqVimBroker'
-require 'MiqDisk'
+require 'disk/MiqDisk'
 require 'MiqPayloadOutputter'
 
 #

@@ -1,4 +1,4 @@
-require 'MiqLargeFile'
+require 'disk/modules/MiqLargeFile'
 require 'md5deep'
 require 'enumerator'
 require 'test/unit'

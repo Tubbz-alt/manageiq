@@ -1,6 +1,6 @@
-require 'miq-xml'
+require 'util/miq-xml'
 require 'VimInventory'
-require 'miq-password'
+require 'util/miq-password'
 
 class VMWareWebSvcOps
     

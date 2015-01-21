@@ -11,7 +11,7 @@ require 'VmwareOps'
 require 'VmdbOps'
 require 'MicrosoftOps'
 require 'miqping'
-require 'miq-password'
+require 'util/miq-password'
 require 'miq-option-parser'
 
 case Platform::OS

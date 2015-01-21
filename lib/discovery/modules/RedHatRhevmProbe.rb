@@ -1,4 +1,4 @@
-require 'PortScan'
+require 'discovery/PortScan'
 
 class RedHatRhevmProbe
   def self.probe(ost)

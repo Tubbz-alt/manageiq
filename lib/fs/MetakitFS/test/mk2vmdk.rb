@@ -1,6 +1,6 @@
 require 'log4r'
 require 'ostruct'
-require 'MiqDisk'
+require 'disk/MiqDisk'
 
 VMDK	= "/Volumes/WDpassport/Virtual Machines/Red Hat Linux.vmwarevm/payload2.vmdk"
 MKFILE	= "rawmkfs"

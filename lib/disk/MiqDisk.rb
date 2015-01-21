@@ -1,5 +1,5 @@
 require 'binary_struct'
-require 'DiskProbe'
+require 'disk/DiskProbe'
 
 class MiqDisk
     attr_accessor :diskType, :dInfo, :blockSize, :pvObj, :fs

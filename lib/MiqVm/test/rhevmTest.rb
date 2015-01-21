@@ -2,7 +2,7 @@
 require 'bundler_setup'
 require 'log4r'
 require 'ostruct'
-require 'MiqVm'
+require 'MiqVm/MiqVm'
 require 'rhevm_api'
 
 RHEVM_SERVER        = raise "please define RHEVM_SERVER"

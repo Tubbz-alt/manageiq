@@ -3,7 +3,7 @@ require 'ostruct'
 require 'find'
 require 'fileutils'
 
-require 'MiqFS'
+require 'fs/MiqFS/MiqFS'
 require 'MetakitFS'
 
 # MK_FILE = "mk4test"

@@ -3,8 +3,8 @@ require 'openssl' # Required for 'Digest' in camcorder (< Ruby 2.1)
 require 'camcorder'
 require 'log4r'
 require 'ostruct'
-require 'MiqDisk'
-require 'MiqFS'
+require 'disk/MiqDisk'
+require 'fs/MiqFS/MiqFS'
 require 'modules/MiqLargeFile'
 
 #

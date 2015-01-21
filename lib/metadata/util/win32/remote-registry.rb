@@ -1,5 +1,5 @@
 require 'ms-registry'
-require 'miq-xml'
+require 'util/miq-xml'
 require 'xml/xml_hash'
 require 'system_path_win'
 

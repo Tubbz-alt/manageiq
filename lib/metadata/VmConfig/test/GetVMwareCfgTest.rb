@@ -1,6 +1,6 @@
 # Only run if we are calling this script directly
 require 'miq-logger'
-require 'VmConfig'
+require 'metadata/VmConfig/VmConfig'
 require 'MiqExtract'
 $log = MIQLogger.get_log(nil, __FILE__)
 $log.level = Log4r::DEBUG

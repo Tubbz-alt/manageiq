@@ -1,9 +1,9 @@
-require 'extensions/miq-dir'
+require 'util/extensions/miq-dir'
 require 'ostruct'
 require 'yaml'
-require 'miq-xml'
-require 'xmlStorage'
-require 'VmConfig'
+require 'util/miq-xml'
+require 'blackbox/xmlStorage'
+require 'metadata/VmConfig/VmConfig'
 require 'digest/md5'
 
 module Manageiq

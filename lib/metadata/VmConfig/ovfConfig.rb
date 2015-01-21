@@ -1,4 +1,4 @@
-require 'miq-xml'
+require 'util/miq-xml'
 
 module OvfConfig
   def convert(filename)

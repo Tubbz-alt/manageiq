@@ -1,6 +1,6 @@
 require 'log4r'
 require 'MiqFsUtil'
-require 'MiqFS'
+require 'fs/MiqFS/MiqFS'
 require 'MetakitFS'
 require 'LocalFS'
 

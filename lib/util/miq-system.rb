@@ -2,7 +2,7 @@ require 'extensions/miq-blank'
 require 'platform'
 require 'runcmd'
 if Platform::OS == :win32
-  require 'miq-wmi'
+  require 'util/win32/miq-wmi'
 end
 
 class MiqSystem

@@ -5,7 +5,7 @@ module DiscoverProbe
 		Dir.foreach(MODDIR) do |pmf|
 			next if !File.fnmatch('?*Probe.rb', pmf)
 			pmod = pmf.chomp(".rb")
-			require pmod
+			require File.join("discovery/modules", pmod)
 			Object.const_get(pmod).probe(dobj)
 		end
 		return(nil)

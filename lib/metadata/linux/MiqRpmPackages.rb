@@ -1,7 +1,7 @@
 require 'binary_struct'
 require 'miq-hash_struct'
 require 'MiqBdb'
-require 'miq-unicode'
+require 'util/miq-unicode'
 
 # RPM Specification located at: http://jrpm.sourceforge.net/rpmspec/index.html
 

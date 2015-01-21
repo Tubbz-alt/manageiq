@@ -5,9 +5,9 @@ require 'FSTestUtil'
 
 require 'VmsFromYaml'
 
-require 'MiqDisk'
+require 'disk/MiqDisk'
 
-require 'MiqFS'
+require 'fs/MiqFS/MiqFS'
 
 # WINDOWS SPECIFIC.
 class TestReg < Test::Unit::TestCase

@@ -20,8 +20,8 @@ require 'digest/md5'
 
 # Common utilities.
 require 'binary_struct'
-require 'miq-unicode'
-require 'miq-xml'
+require 'util/miq-unicode'
+require 'util/miq-xml'
 require 'miq-exception'
 
 require 'event_log_filter'

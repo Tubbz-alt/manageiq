@@ -1,8 +1,8 @@
 require 'bundler_setup'
 require 'log4r'
 require 'ostruct'
-require 'MiqDisk'
-require 'MiqFS'
+require 'disk/MiqDisk'
+require 'fs/MiqFS/MiqFS'
 
 #
 # Formatter to output log messages to the console.

@@ -10,7 +10,7 @@ require 'MiqVimAlarmManager'
 require 'MiqVimCustomizationSpecManager'
 
 # begin
-  # require 'VixDiskLib'
+  # require 'VixDiskLib/VixDiskLib'
   # class VdlConnection
     # alias :release :disconnect
   # end

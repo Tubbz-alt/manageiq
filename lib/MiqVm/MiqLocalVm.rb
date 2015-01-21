@@ -1,6 +1,6 @@
 require 'ostruct'
-require 'MiqVm'
-require 'MiqFS'
+require 'MiqVm/MiqVm'
+require 'fs/MiqFS/MiqFS'
 require 'RealFS'
 
 class MiqLocalVm < MiqVm

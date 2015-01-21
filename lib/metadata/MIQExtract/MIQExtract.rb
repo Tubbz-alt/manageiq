@@ -1,8 +1,8 @@
 #$:.push("#{File.dirname(__FILE__)}/../VMMount")
 #$:.push("#{File.dirname(__FILE__)}/../VmConfig")
-require 'MiqVm'
+require 'MiqVm/MiqVm'
 require 'md5deep'
-require 'miq-xml'
+require 'util/miq-xml'
 require 'miq-logger'
 require 'ostruct'
 require 'Win32Accounts'
@@ -16,7 +16,7 @@ require 'LinuxInitProcs'
 require 'LinuxOSInfo'
 require 'VmScanProfiles'
 require 'MiqVim'
-require 'miq-password'
+require 'util/miq-password'
 require 'MiqVimBroker'
 
 class MIQExtract

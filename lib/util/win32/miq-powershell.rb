@@ -1,10 +1,10 @@
-require 'miq-xml'
+require 'util/miq-xml'
 require 'miq-logger'
 require 'runcmd'
 require 'io/wait'
 require 'open-uri'
 require 'miq-encode'
-require 'miq-unicode'
+require 'util/miq-unicode'
 require 'win32/registry' if Platform::OS == :win32
 
 module MiqPowerShell
@@ -37,7 +37,7 @@ module MiqPowerShell
 
   def self.execute_async(ps_command)
     self.validate_version()
-    require 'miq-wmi'
+    require 'util/win32/miq-wmi'
     command = "powershell.exe #{ps_command}"
     $log.debug "PowerShell: Running command: [#{command}]" if $log
     wmi = WMIHelper.connectServer()

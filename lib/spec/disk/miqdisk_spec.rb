@@ -3,7 +3,7 @@ require 'spec_helper'
 $LOAD_PATH << lib_disk_dir
 
 require 'ostruct'
-require 'MiqDisk'
+require 'disk/MiqDisk'
 require 'modules/RawDisk'
 require 'modules/RawDiskProbe'
 require 'modules/QcowDiskProbe'

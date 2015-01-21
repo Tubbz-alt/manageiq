@@ -1,5 +1,5 @@
 require 'test/unit'
-require 'miq-xml'
+require 'util/miq-xml'
 require 'nokogiri'
 
 class NokogiriXmlMethods < Test::Unit::TestCase

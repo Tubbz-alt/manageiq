@@ -1,4 +1,4 @@
-require 'VixDiskLib'
+require 'VixDiskLib/VixDiskLib'
 
 module VixDiskMod
     def d_init

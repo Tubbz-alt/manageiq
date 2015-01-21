@@ -1,4 +1,4 @@
-require 'miq-ipmi'
+require 'util/miq-ipmi'
 
 class IpmiProbe
 	def self.probe(ost)

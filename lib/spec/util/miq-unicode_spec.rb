@@ -1,6 +1,6 @@
 require "spec_helper"
 
-require 'miq-unicode'
+require 'util/miq-unicode'
 
 describe 'miq-unicode' do
   context "with Unicode and UTF-8 data" do

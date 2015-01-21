@@ -1,4 +1,4 @@
-require 'MiqFS'
+require 'fs/MiqFS/MiqFS'
 
 Dir.chdir(File.dirname(__FILE__))
 

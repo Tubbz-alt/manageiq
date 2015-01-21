@@ -1,7 +1,7 @@
 # encoding: US-ASCII
 
 require 'enumerator'
-require 'MiqDisk'
+require 'disk/MiqDisk'
 
 module Lvm2Scanner
     

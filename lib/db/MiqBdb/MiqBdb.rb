@@ -89,16 +89,11 @@
 #
 ############################################################################################
 
-
-
-
-require 'enumerator'
-
 require 'binary_struct'
 require 'util/miq-hash_struct'
 
-require_relative 'MiqBdbHash'
-require_relative 'MiqBdbBtree'
+require 'db/MiqBdb/MiqBdbHash'
+require 'db/MiqBdb/MiqBdbBtree'
 
 
 module MiqBerkeleyDB

@@ -1,4 +1,4 @@
-require 'PortScan'
+require 'discovery/PortScan'
 
 # Ports:
 #        5900 - Microsoft Virtual Machine Remote Control Client

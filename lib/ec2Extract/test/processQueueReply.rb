@@ -2,7 +2,7 @@
 
 require 'log4r'
 require 'optparse'
-require 'miq-xml'
+require 'util/miq-xml'
 
 require_relative '../credentials'
 require_relative '../Ec2ExtractQueue'

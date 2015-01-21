@@ -1,6 +1,6 @@
 require 'platform'
 require "Win32API" if Platform::OS == :win32
-require 'MiqLargeFile'
+require 'disk/modules/MiqLargeFile'
 require 'runcmd'
 require 'uri'
 require 'MiqSockUtil'

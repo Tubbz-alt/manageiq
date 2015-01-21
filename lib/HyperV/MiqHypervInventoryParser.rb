@@ -1,5 +1,5 @@
 require 'miq-extensions'
-require 'miq-unicode'
+require 'util/miq-unicode'
 
 require 'digest/md5'
 

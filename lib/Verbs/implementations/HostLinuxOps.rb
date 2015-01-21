@@ -1,7 +1,7 @@
 require 'ostruct'
-require 'miq-xml'
+require 'util/miq-xml'
 require 'runcmd'
-require 'miq-password'
+require 'util/miq-password'
 require 'MiqKvmHost'
 
 module MiqLinux

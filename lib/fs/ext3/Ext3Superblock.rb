@@ -6,7 +6,7 @@ require 'Ext3Inode'
 require 'binary_struct'
 require 'miq-uuid'
 require 'stringio'
-require 'MiqMemory'
+require 'util/MiqMemory'
 
 require 'rufus/lru'
 

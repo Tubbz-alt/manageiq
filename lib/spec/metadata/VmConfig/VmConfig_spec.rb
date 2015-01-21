@@ -1,6 +1,6 @@
 require "spec_helper"
 
-require 'VmConfig'
+require 'metadata/VmConfig/VmConfig'
 
 describe VmConfig do
   context "#initialize" do

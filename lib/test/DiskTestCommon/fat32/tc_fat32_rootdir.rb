@@ -8,7 +8,7 @@ require 'Fat32BootSect'
 require 'Fat32DirectoryEntry'
 
 # MiqDisk
-require 'MiqDisk'
+require 'disk/MiqDisk'
 
 class Fat32TestRoot < Test::Unit::TestCase
 	

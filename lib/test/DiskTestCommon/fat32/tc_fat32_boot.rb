@@ -3,7 +3,7 @@ require 'ostruct'
 
 require 'VmsFromYaml'
 
-require 'MiqDisk'
+require 'disk/MiqDisk'
 
 require 'Fat32BootSect'
 

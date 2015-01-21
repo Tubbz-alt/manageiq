@@ -1,4 +1,4 @@
-require 'miq-xml'
+require 'util/miq-xml'
 require 'SharedOps'
 
 class EmsEventMonitorOps

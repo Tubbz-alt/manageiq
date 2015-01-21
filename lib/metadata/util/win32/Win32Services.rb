@@ -1,5 +1,5 @@
 #require 'fleece_hives'
-require 'miq-xml'
+require 'util/miq-xml'
 require 'miq-logger'
 require 'xml_utils'
 require 'xml/xml_hash'

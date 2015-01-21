@@ -1,7 +1,7 @@
 require 'Iso9660Util'
 
 require 'binary_struct'
-require 'miq-unicode'
+require 'util/miq-unicode'
 
 module Iso9660
 	

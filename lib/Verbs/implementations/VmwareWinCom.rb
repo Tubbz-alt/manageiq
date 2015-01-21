@@ -3,7 +3,7 @@ require 'ostruct'
 require 'win32/registry'
 require "win32/service"
 require 'versioninfo'
-require 'VmConfig'
+require 'metadata/VmConfig/VmConfig'
 require 'miq-extensions'
 
 class VmwareCom

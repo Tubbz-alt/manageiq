@@ -1,5 +1,5 @@
 require 'miq-hash_struct'
-require 'miq-xml'
+require 'util/miq-xml'
 require 'MiqRpmPackages'
 require 'MiqConaryPackages'
 

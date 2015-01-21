@@ -1,4 +1,4 @@
-require 'PortScan'
+require 'discovery/PortScan'
 
 # Ports:
 #        902  - VMware Server console

@@ -3,7 +3,7 @@
 require 'stringio'
 
 require 'binary_struct'
-require 'miq-unicode'
+require 'util/miq-unicode'
 
 # Notes:
 #       The peheader object member 'icons' is an array of icons in the file. Sub 0 is the application 

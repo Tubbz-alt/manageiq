@@ -2,7 +2,7 @@ require 'Iso9660Util'
 require 'Iso9660RockRidge'
 
 require 'binary_struct'
-require 'miq-unicode'
+require 'util/miq-unicode'
 
 module Iso9660
 	

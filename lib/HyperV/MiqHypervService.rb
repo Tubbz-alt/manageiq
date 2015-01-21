@@ -1,7 +1,7 @@
 require 'miq-extensions'
-require 'miq-xml'
+require 'util/miq-xml'
 require 'miq-hash_struct'
-require 'miq-wmi'
+require 'util/win32/miq-wmi'
 
 class MiqHypervService
   WMIDTD20 = 1

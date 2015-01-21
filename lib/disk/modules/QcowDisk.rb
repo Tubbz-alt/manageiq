@@ -1,5 +1,5 @@
-require 'MiqLargeFile'
-require 'MiqMemory'
+require 'disk/modules/MiqLargeFile'
+require 'util/MiqMemory'
 require 'binary_struct'
 
 require 'zlib'

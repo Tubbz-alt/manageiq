@@ -4,7 +4,7 @@ require 'yaml'
 require 'ostruct'
 require 'zlib'
 
-require "MiqFS"
+require "fs/MiqFS/MiqFS"
 require "MetakitFS"
 
 class MkCollectFiles

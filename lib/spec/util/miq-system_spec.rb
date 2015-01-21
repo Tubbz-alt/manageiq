@@ -1,6 +1,6 @@
 require "spec_helper"
 
-require 'miq-system'
+require 'util/miq-system'
 
 describe MiqSystem do
   context ".disk_usage" do

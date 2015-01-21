@@ -1,6 +1,6 @@
 require "spec_helper"
 
-require 'miq-ipmi'
+require 'util/miq-ipmi'
 
 describe MiqIPMI do
   before(:each) do

@@ -1,6 +1,6 @@
 require 'sync'
 
-require 'MiqFS'
+require 'fs/MiqFS/MiqFS'
 require 'VimDatastoreFS'
 require 'miq-extensions'  # Required patch to open-uri for get_file_content
 require 'miq-encode'

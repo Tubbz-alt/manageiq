@@ -1,4 +1,4 @@
-require 'MiqLargeFile'
+require 'disk/modules/MiqLargeFile'
 
 module MSVSFixedDisk
   def d_init

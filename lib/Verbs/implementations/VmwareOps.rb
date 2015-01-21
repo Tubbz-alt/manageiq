@@ -1,10 +1,10 @@
 require 'runcmd'
 require 'MIQExtract'
-require 'VmConfig'
+require 'metadata/VmConfig/VmConfig'
 require 'platform'
 require 'SharedOps'
 require 'MiqVimInventory'
-require 'miq-password'
+require 'util/miq-password'
 
 class VMWareOps
     def initialize(ost)

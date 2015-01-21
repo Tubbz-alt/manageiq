@@ -1,16 +1,14 @@
-#gem 'Platform'
 require 'platform'
-require 'miq-system'
+require 'util/miq-system'
 
 if Platform::IMPL == :linux
 	if MiqSystem.arch == :x86
-		require 'MiqLargeFileLinux'
+		require 'disk/modules/MiqLargeFileLinux'
 	elsif MiqSystem.arch == :x86_64
-		require 'MiqBlockDevOps'
-		require 'RawBlockIO'
+		require 'disk/modules/RawBlockIO'
 	end
 elsif Platform::OS == :win32
-	require 'MiqLargeFileWin32'
+	require 'disk/modules/MiqLargeFileWin32'
 end
 
 module MiqLargeFile

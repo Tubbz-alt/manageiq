@@ -1,6 +1,6 @@
 require 'ostruct'
-require 'MiqDisk'
-require 'MiqFS'
+require 'disk/MiqDisk'
+require 'fs/MiqFS/MiqFS'
 require 'VMPlatformMount'
 require 'system_path_win'   # Used to check for Windows system partition
 

@@ -1,7 +1,7 @@
 require 'ostruct'
 require 'test/unit'
 
-require 'MiqDisk'
+require 'disk/MiqDisk'
 
 require 'Iso9660BootSector'
 include Iso9660

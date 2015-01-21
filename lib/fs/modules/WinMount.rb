@@ -1,5 +1,5 @@
 require 'platform'
-require 'MiqFS'
+require 'fs/MiqFS/MiqFS'
 require 'boot_info_win'
 
 module WinMount

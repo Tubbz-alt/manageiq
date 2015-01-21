@@ -1,5 +1,5 @@
 require 'platform'
-require 'miq-system'
+require 'util/miq-system'
 
 platform = Platform::IMPL
 

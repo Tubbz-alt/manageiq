@@ -1,6 +1,6 @@
 require "spec_helper"
 
-require 'PortScan'
+require 'discovery/PortScan'
 
 require 'ostruct'
 require 'benchmark'

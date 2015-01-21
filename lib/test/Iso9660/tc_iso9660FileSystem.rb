@@ -1,9 +1,9 @@
 require 'ostruct'
 require 'test/unit'
 
-require 'MiqDisk'
+require 'disk/MiqDisk'
 
-require 'MiqFS'
+require 'fs/MiqFS/MiqFS'
 
 ONE_MEG = 0x0000100000
 

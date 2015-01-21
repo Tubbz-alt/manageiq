@@ -3,7 +3,7 @@
 require 'log4r'
 require 'optparse'
 require 'MiqFsUtil'
-require 'MiqFS'
+require 'fs/MiqFS/MiqFS'
 require 'MetakitFS'
 require 'LocalFS'
 

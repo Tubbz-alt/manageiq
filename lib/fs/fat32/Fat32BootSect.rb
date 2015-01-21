@@ -1,7 +1,7 @@
 # encoding: US-ASCII
 
 require 'binary_struct'
-require 'MiqMemory'
+require 'util/MiqMemory'
 
 # ////////////////////////////////////////////////////////////////////////////
 # // Data definitions.

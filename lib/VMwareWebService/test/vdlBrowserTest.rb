@@ -4,7 +4,7 @@ require 'enumerator'
 
 require 'MiqVimBroker'
 # require 'MiqVim'
-require 'VixDiskLib'
+require 'VixDiskLib/VixDiskLib'
 
 #
 # Formatter to output log messages to the console.

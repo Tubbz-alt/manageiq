@@ -2,7 +2,7 @@ require 'ostruct'
 
 require 'VmsFromYaml'
 
-require 'MiqDisk'
+require 'disk/MiqDisk'
 
 require 'Ext3Superblock'
 

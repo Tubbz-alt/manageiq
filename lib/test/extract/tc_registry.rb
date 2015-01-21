@@ -1,7 +1,7 @@
 
-require 'MiqVm'
+require 'MiqVm/MiqVm'
 require 'MIQExtract'
-require 'miq-xml'
+require 'util/miq-xml'
 require 'digest/md5'
 require 'test/unit'
 

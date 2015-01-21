@@ -1,7 +1,7 @@
 
 require 'ostruct'
 require 'log4r'
-require 'MiqVm'
+require 'MiqVm/MiqVm'
 
 class ConsoleFormatter < Log4r::Formatter
 	def format(event)
