@@ -1712,6 +1712,8 @@ class ApplicationController < ActionController::Base
       else
         javascript_redirect :action => @refresh_partial, :id => @redirect_id
       end
+
+      puts "Hi"            
     end
   end
 
