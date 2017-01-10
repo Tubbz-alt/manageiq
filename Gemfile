@@ -11,6 +11,9 @@ gem "manageiq-gems-pending", ">0", :require => 'manageiq-gems-pending', :git => 
 gem "handsoap", "~>0.2.5", :require => false, :git => "https://github.com/ManageIQ/handsoap.git", :tag => "v0.2.5-5"
 gem "rubywbem",            :require => false, :git => "https://github.com/ManageIQ/rubywbem.git", :branch => "rubywbem_0_1_0"
 
+gem 'influxdb', :require => false
+gem 'elasticsearch', :require => false
+
 # when using this Gemfile inside a providers Gemfile, the dependency for the provider is already declared
 def manageiq_plugin(plugin_name)
   unless dependencies.detect { |d| d.name == plugin_name }
