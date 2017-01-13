@@ -1,3 +1,10 @@
+class Object
+  def self.inherited(class_name)
+    puts "#{class_name}: #{caller.join("\n")}" if class_name.to_s.end_with?("Job")
+    super
+  end
+end
+
 describe JobProxyDispatcher do
   include Spec::Support::JobProxyDispatcherHelper
 

@@ -21,6 +21,10 @@ module VmOrTemplate::Scanning
     # VmScan.methods(false).each { |m| puts [m, VmScan.method(m).source_location].inspect }
     # VmScan.instance_methods(false).each { |m| puts [m, VmScan.instance_method(m).source_location].inspect }
 
+    puts "WHERE ARE YOU?"
+    require 'where_is'
+    puts Where.are(Job)
+
     j = VmScan.where(:state => 'waiting_to_start')
         .where(:sync_key => guid)
         .pluck(:id)
