@@ -25,7 +25,7 @@ before_install:
 before_script:
 - bundle exec rake test:$TEST_SUITE:setup
 script:
-- bundle exec rspec ./spec/models/job_proxy_dispatcher_spec.rb
+- bundle exec rspec --seed 46777 ./spec/models/job_proxy_dispatcher_spec.rb
 after_failure:
 - source ${TRAVIS_BUILD_DIR}/tools/ci/after_failure.sh
 notifications:
