@@ -1,7 +1,7 @@
 class ScanItem < ApplicationRecord
   serialize :definition
-  acts_as_miq_set_member
   include UuidMixin
+  include MiqSetMemberMixin
 
   YAML_DIR = File.expand_path(File.join(Rails.root, "product/scan_items"))
   Dir.mkdir(YAML_DIR) unless File.exist?(YAML_DIR)

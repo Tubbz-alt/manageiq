@@ -1,5 +1,6 @@
 class MiqAlert < ApplicationRecord
   include UuidMixin
+  include MiqSetMemberMixin
 
   SEVERITIES = [nil, "info", "warning", "error"]
 
@@ -33,8 +34,6 @@ class MiqAlert < ApplicationRecord
   def self.base_tables
     BASE_TABLES
   end
-
-  acts_as_miq_set_member
 
   ASSIGNMENT_PARENT_ASSOCIATIONS = %i(host ems_cluster ext_management_system my_enterprise physical_server).freeze
 

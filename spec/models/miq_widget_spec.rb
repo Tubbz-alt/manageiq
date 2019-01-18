@@ -92,7 +92,7 @@ describe MiqWidget do
 
       it "ignores the legacy format admin|db_name" do
         ws = FactoryBot.create(:miq_widget_set, :name => "#{@user1.userid}|Home")
-        @widget_report_vendor_and_guest_os.make_memberof(ws)
+        ws.add_member(@widget_report_vendor_and_guest_os)
         expect(@widget_report_vendor_and_guest_os.grouped_subscribers).to be_kind_of(Hash)
         expect(@widget_report_vendor_and_guest_os.grouped_subscribers).to be_empty
       end
@@ -100,13 +100,13 @@ describe MiqWidget do
       context 'with subscribers' do
         before do
           ws = FactoryBot.create(:miq_widget_set, :name => "Home", :userid => @user1.userid, :group_id => @group1.id)
-          @widget_report_vendor_and_guest_os.make_memberof(ws)
+          ws.add_member(@widget_report_vendor_and_guest_os)
         end
 
         it "returns non-empty array when widget has subscribers" do
           user_temp = add_user(@group1)
           ws_temp   = add_dashboard_for_user("Home", user_temp.userid, @group1.id)
-          @widget_report_vendor_and_guest_os.make_memberof(ws_temp)
+          ws_temp.add_member(@widget_report_vendor_and_guest_os)
           result = @widget_report_vendor_and_guest_os.grouped_subscribers
 
           expect(result.size).to eq(1)
@@ -118,7 +118,7 @@ describe MiqWidget do
           (1..3).each do |_i|
             user_i = add_user(@group2)
             ws_i   = add_dashboard_for_user("Home", user_i.userid, @group2.id)
-            @widget_report_vendor_and_guest_os.make_memberof(ws_i)
+            ws_i.add_member(@widget_report_vendor_and_guest_os)
             users << user_i
           end
 
@@ -132,7 +132,7 @@ describe MiqWidget do
         it 'ignores the user that does not exist any more' do
           user_temp = add_user(@group1)
           ws_temp   = add_dashboard_for_user("Home", user_temp.userid, @group1.id)
-          @widget_report_vendor_and_guest_os.make_memberof(ws_temp)
+          ws_temp.add_member(@widget_report_vendor_and_guest_os)
 
           user_temp.delete
           result = @widget_report_vendor_and_guest_os.grouped_subscribers
@@ -619,8 +619,8 @@ describe MiqWidget do
 
     context "for non-self service user" do
       before do
-        widget.make_memberof(@ws1)
-        widget.make_memberof(@ws2)
+        @ws1.add_member(widget)
+        @ws2.add_member(widget)
       end
 
       it "queued based on group/TZs of User's in the group" do
@@ -673,8 +673,8 @@ describe MiqWidget do
     context "for self service user" do
       before do
         @role.update_attributes(:settings => {:restrictions => {:vms => :user}})
-        widget.make_memberof(@ws1)
-        widget.make_memberof(@ws2)
+        @ws1.add_member(widget)
+        @ws2.add_member(widget)
         widget.queue_generate_content
       end
 
@@ -702,7 +702,7 @@ describe MiqWidget do
                                      :userid   => @user1.userid,
                                      :group_id => @group2.id
                                     )
-        widget.make_memberof(@ws3)
+        @ws3.add_member(widget)
 
         @user1.miq_groups = [@group, @group2]
         @user1.save

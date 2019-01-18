@@ -16,7 +16,7 @@ class CustomButton < ApplicationRecord
   validates :guid, :uniqueness => true, :presence => true
 
   include UuidMixin
-  acts_as_miq_set_member
+  include MiqSetMemberMixin
 
   TYPES = { "default"          => "Default",
             "ansible_playbook" => "Ansible Playbook"}.freeze

@@ -1,12 +1,13 @@
 class Condition < ApplicationRecord
   include UuidMixin
+  include MiqSetMemberMixin
+
   before_validation :default_name_to_guid, :on => :create
 
   validates :name, :description, :guid, :expression, :towhat, :presence => true
   validates :name, :description, :guid, :uniqueness => true
 
   acts_as_miq_taggable
-  acts_as_miq_set_member
 
   belongs_to :miq_policy
   has_and_belongs_to_many :miq_policies
