@@ -1,7 +1,7 @@
 module MiqSetMemberMixin
   extend ActiveSupport::Concern
   included do
-    has_many :miq_set_memberships, :dependent => :delete, :as => :member
+    has_many :miq_set_memberships, :dependent => :delete_all, :as => :member
   end
 
   module ClassMethods

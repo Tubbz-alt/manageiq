@@ -14,7 +14,7 @@ class MiqSet < ApplicationRecord
                           :if    => proc { |c| c.class.in_my_region.exists?(:name => c.name) }
   validates_presence_of   :description
 
-  has_many :miq_set_memberships, :dependent => :delete
+  has_many :miq_set_memberships, :dependent => :delete_all
   belongs_to :owner, :polymorphic => true
 
   def self.model_class
