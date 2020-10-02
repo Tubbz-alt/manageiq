@@ -34,7 +34,7 @@ module FixAuth
         if options[:hardcode]
           hardcode(old_value, options[:hardcode])
         else
-          ManageIQ::Password.new.recrypt(old_value)
+          ManageIQ::Password.recrypt(old_value, options[:legacy_key])
         end
       rescue
         if options[:invalid]

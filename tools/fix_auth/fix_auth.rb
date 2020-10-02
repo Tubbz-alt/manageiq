@@ -84,15 +84,20 @@ module FixAuth
 
     def set_passwords
       ManageIQ::Password.key_root = cert_dir if cert_dir
-      ManageIQ::Password.add_legacy_key("v0_key", :v0)
-      ManageIQ::Password.add_legacy_key("v1_key", :v1)
-      if options[:legacy_key] && !ManageIQ::Password.add_legacy_key(options[:legacy_key])
+    end
+
+    def set_legacy_key
+      key = ManageIQ::Password.load_key_file(options[:legacy_key])
+      if key
+        options[:legacy_key] = key
+      else
         puts "WARNING: key #{k} not found"
       end
     end
 
     def run
       set_passwords unless options[:key]
+      set_legacy_key if options[:legacy_key]
 
       generate_password if options[:key]
       fix_database_yml if options[:databaseyml]
