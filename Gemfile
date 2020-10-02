@@ -50,7 +50,7 @@ gem "log_decorator",                  "~>0.1",         :require => false
 gem "manageiq-api-client",            "~>0.3.4",       :require => false
 gem "manageiq-loggers",               "~>0.5.0",       :require => false
 gem "manageiq-messaging",             "~>0.1.4",       :require => false
-gem "manageiq-password",              "~>0.3",         :require => false
+gem "manageiq-password",              "~>0.3",         :require => false, :git => "git@github.com:Fryguy/manageiq-password", :branch => "remove_add_legacy_key"
 gem "manageiq-postgres_ha_admin",     "~>3.1",         :require => false
 gem "manageiq-ssh-util",              "~>0.1.1",       :require => false
 gem "memoist",                        "~>0.15.0",      :require => false
