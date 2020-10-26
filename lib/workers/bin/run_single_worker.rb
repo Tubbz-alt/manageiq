@@ -40,11 +40,17 @@ opt_parser = OptionParser.new do |opts|
 
   opts.on("-r=ROLE", "--roles=role1,role2",
           "Set a list of active roles for the worker (comma separated, no spaces) or --roles=? to list all roles") do |val|
+    role_names = all_role_names
     if val == "?"
-      puts all_role_names
+      puts role_names
       exit
     end
-    options[:roles] = val.split(",")
+
+    roles = val.split(",")
+    invalid_roles = roles - all_role_names
+    STDERR.puts "ERROR: invalid roles: #{invalid_roles.join(", ")}" if invalid_roles.any?
+
+    options[:roles] = roles
   end
 end
 
@@ -60,6 +66,7 @@ end
 opt_parser.parse!
 worker_class = ARGV[0]
 
+puts "** Booting #{worker_class} with PID: #{Process.pid}#{" and options: #{options.inspect}" if options.any?}..." unless options[:list]
 require File.expand_path("../../../config/environment", __dir__)
 
 if options[:list]
@@ -68,10 +75,16 @@ if options[:list]
 end
 opt_parser.abort(opt_parser.help) unless worker_class
 
+MiqWorker::Runner.safe_log(nil, "Validating worker class...")
 unless MiqWorkerType.find_by(:worker_type => worker_class)
-  STDERR.puts "ERR:  `#{worker_class}` WORKER CLASS NOT FOUND!  Please run with `-l` to see possible worker class names."
+  err = "#{worker_class} WORKER CLASS NOT FOUND!  Please run with -l to see possible worker class names."
+  MiqWorker::Runner.safe_log(nil, err, :error)
+  STDERR.puts "ERROR: #{err}"
   exit 1
 end
+
+worker_class = worker_class.constantize
+runner_class = worker_class::Runner
 
 # Skip heartbeating with single worker
 ENV["DISABLE_MIQ_WORKER_HEARTBEAT"] ||= options[:heartbeat] ? nil : '1'
@@ -79,17 +92,27 @@ ENV["DISABLE_MIQ_WORKER_HEARTBEAT"] ||= options[:heartbeat] ? nil : '1'
 options[:ems_id] ||= ENV["EMS_ID"]
 
 if options[:roles].present?
-  MiqServer.my_server.server_role_names += options[:roles]
-  MiqServer.my_server.activate_roles(MiqServer.my_server.server_role_names)
+  runner_class.safe_log(nil, "Activating provided server roles...")
+  MiqServer.my_server.lock do
+    MiqServer.my_server.reload
+    MiqServer.my_server.server_role_names += options[:roles]
+    MiqServer.my_server.activate_roles(MiqServer.my_server.server_role_names)
+  end
 end
 
-worker_class = worker_class.constantize
+runner_class.safe_log(nil, "Validating worker roles...")
 unless worker_class.has_required_role?
-  STDERR.puts "ERR:  Server roles are not sufficient for `#{worker_class}` worker."
+  msg = "Server roles are not sufficient for #{worker_class} worker."
+  runner_class.safe_log(nil, msg, :error)
+  STDERR.puts "ERROR: #{msg}"
   exit 1
 end
 
-worker_class.preload_for_worker_role if worker_class.respond_to?(:preload_for_worker_role)
+if worker_class.respond_to?(:preload_for_worker_role)
+  runner_class.safe_log(nil, "Preloading worker...")
+  worker_class.preload_for_worker_role
+end
+
 unless options[:dry_run]
   create_options = {:pid => Process.pid}
   runner_options = {}
@@ -99,27 +122,32 @@ unless options[:dry_run]
     runner_options[:ems_id]     = options[:ems_id].length == 1 ? options[:ems_id].first : options[:ems_id].collect { |id| id }
   end
 
-  worker = if options[:guid]
-             worker_class.find_by!(:guid => options[:guid]).tap do |wrkr|
-               wrkr.update(:pid => Process.pid)
-             end
-           else
-             worker_class.create_worker_record(create_options)
-           end
-
   begin
+    worker = if options[:guid]
+               runner_class.safe_log(nil, "Updating worker record with guid #{options[:guid]}...")
+               worker_class.find_by!(:guid => options[:guid]).tap do |wrkr|
+                 wrkr.update(:pid => Process.pid)
+               end
+             else
+               runner_class.safe_log(nil, "Creating worker record...")
+               worker_class.create_worker_record(create_options)
+             end
     runner_options[:guid] = worker.guid
-    $log.info("Starting #{worker.class.name} with runner options #{runner_options}")
-    worker.class::Runner.new(runner_options).tap(&:setup_sigterm_trap).start
-  rescue SystemExit
+
+    runner_class.safe_log(worker, "Starting #{worker_class.name} with runner options #{runner_options}")
+    runner_class.new(runner_options).tap(&:setup_sigterm_trap).start
+  rescue SystemExit, SignalException
     raise
   rescue Exception => err
-    MiqWorker::Runner.safe_log(worker, "An unhandled error has occurred: #{err}\n#{err.backtrace.join("\n")}", :error)
-    STDERR.puts("ERROR: An unhandled error has occurred: #{err}. See log for details.") rescue nil
+    msg = "An unhandled error has occurred: #{err}\n#{err.backtrace.join("\n")}"
+    runner_class.safe_log(worker, msg, :error)
+    STDERR.puts("ERROR: #{msg}") rescue nil
     exit 1
   ensure
-    FileUtils.rm_f(worker.heartbeat_file)
-    $log.info("Deleting worker record for #{worker.class.name}, id #{worker.id}")
-    worker.delete
+    if worker
+      FileUtils.rm_f(worker.heartbeat_file)
+      runner_class.safe_log(worker, "Deleting worker record for #{worker.class.name}, id #{worker.id}")
+      worker.delete
+    end
   end
 end
